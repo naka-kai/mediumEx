@@ -1,0 +1,43 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+body {
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* メディアクエリ */
+.concept {
+  background-image: url(../img/bg.jpg);
+  width: 100%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.concept .concept-text-wrapper .concept-title-textbox .concept-title-text1 {
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=concept.css.map */

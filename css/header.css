@@ -1,0 +1,258 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+body {
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* メディアクエリ */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+  padding: 2em;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 5em;
+    padding: 1em;
+  }
+}
+
+header .header-left a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-left a img {
+  width: 4em;
+  height: 4em;
+  padding-right: 1.6em;
+}
+
+@media (max-width: 800px) {
+  header .header-left a img {
+    width: 3.5em;
+    height: 3.5em;
+    padding-right: 1.2em;
+  }
+}
+
+header .header-left a h1 {
+  font-size: 3.2em;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  color: #FFFFFF;
+}
+
+@media (max-width: 800px) {
+  header .header-left a h1 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: 0.09em;
+  }
+}
+
+header .header-pc-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  header .header-pc-nav {
+    display: none;
+  }
+}
+
+header .header-pc-nav .header-pc-center {
+  width: 19.8em;
+}
+
+header .header-pc-nav .header-pc-center .header-pc-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-room a {
+  color: #FFFFFF;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 3;
+}
+
+header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-food a {
+  color: #FFFFFF;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 3;
+}
+
+header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-spa a {
+  color: #FFFFFF;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 3;
+}
+
+header .header-pc-nav .header-pc-right a {
+  display: block;
+}
+
+header .header-pc-nav .header-pc-right a .header-pc-booking-inner {
+  width: 17em;
+  height: 5.4em;
+  background-color: #978F10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-pc-nav .header-pc-right a .header-pc-booking-inner img {
+  width: 2em;
+  height: 2em;
+  padding-right: 1em;
+}
+
+header .header-pc-nav .header-pc-right a .header-pc-booking-inner p {
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 3;
+  color: #FFFFFF;
+}
+
+header .header-sp-nav {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header .header-sp-nav {
+    width: 40%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.16);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 20;
+    top: 7em;
+    right: -40%;
+  }
+}
+
+header .header-sp-nav .header-sp-menu:first-child {
+  margin-top: 20px;
+}
+
+header .header-sp-nav .header-sp-menu .header-sp-menu-list a {
+  display: block;
+  font-size: 21px;
+  color: #FFFFFF;
+  padding: 1em;
+}
+
+header .header-sp-nav.open {
+  right: 0;
+}
+
+header .ham {
+  display: none;
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  header .ham {
+    display: block;
+  }
+}
+
+header .ham .ham-line {
+  position: absolute;
+  left: 1em;
+  width: 3em;
+  height: 0.2em;
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .ham .ham-line1 {
+  top: 1.3em;
+}
+
+header .ham .ham-line1.open {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2em;
+}
+
+header .ham .ham-line2 {
+  top: 2.4em;
+}
+
+header .ham .ham-line2.open {
+  width: 0;
+}
+
+header .ham .ham-line3 {
+  top: 3.5em;
+}
+
+header .ham .ham-line3.open {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 2em;
+}
+/*# sourceMappingURL=header.css.map */

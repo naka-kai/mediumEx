@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+body {
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”,
+    “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”,
+    “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* メディアクエリ */
+
+$bpc: 1920px; //大きいPC
+$mpc: 1280px; //中くらいのPC
+$spc: 1000px; //小さいPC
+$sspc: 800px; //小さい小さいPC
+$sp: 375px; // スマホ
+$ssp: 320px; // SE
+
+@mixin bpc {
+  @media (max-width: ($bpc)) {
+    @content;
+  }
+}
+
+@mixin mpc {
+  @media (max-width: ($mpc)) {
+    @content;
+  }
+}
+
+@mixin spc {
+  @media (max-width: ($spc)) {
+    @content;
+  }
+}
+
+@mixin sspc {
+  @media (max-width: ($sspc)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin ssp {
+  @media (max-width: ($ssp)) {
+    @content;
+  }
+}

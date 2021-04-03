@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import 'style.scss';
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  16% {
+    opacity: 1;
+  }
+
+  34% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(1.2);
+    z-index: 9;
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.mainvisual {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: relative;
+
+  .mainvisual-text1 {
+    color: #FFFFFF;
+    font-size: 3.4em;
+    font-weight: bold;
+    line-height: 1.24;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 5em;
+    right: 9em;
+    z-index: 11;
+  }
+
+  .mainvisual-text2 {
+    color: #FFFFFF;
+    font-size: 3.4em;
+    font-weight: bold;
+    line-height: 1.24;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 5em;
+    right: 11em;
+    z-index: 11;
+  }
+
+  .main_imgBox {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .main_img {
+      z-index: 10;
+      opacity: 0;
+      width: 100%;
+      height: 680px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-animation: anime 18s 0s infinite;
+      animation: anime 18s 0s infinite;
+
+      &:nth-of-type(2) {
+        -webkit-animation-delay: 06s;
+        animation-delay: 06s;
+      }
+
+      &:nth-of-type(3) {
+        -webkit-animation-delay: 12s;
+        animation-delay: 12s;
+      }
+    }
+  }
+}
