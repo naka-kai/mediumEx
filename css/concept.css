@@ -20,24 +20,103 @@ ul {
 .concept {
   background-image: url(../img/bg.jpg);
   width: 100%;
+  height: 68.1em;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-orientation: upright;
+  position: relative;
+}
+
+.concept .concept-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .concept .concept-text-wrapper .concept-title-textbox .concept-title-text1 {
-  font-size: 28px;
+  font-size: 2.8em;
   font-weight: 100;
   line-height: 1.5;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-title-textbox .concept-title-text2 {
+  font-size: 2.8em;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text1 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text2 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text3 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox2 .concept-textbox2-text1 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox2 .concept-textbox2-text2 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox2 .concept-textbox2-text3 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text1 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text2 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text3 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.38;
+  color: #000000;
+}
+
+.concept .concept-text-wrapper .concept-sign {
+  font-size: 2.2em;
+  font-weight: 100;
+  line-height: 1.45;
+  color: #000000;
 }
 /*# sourceMappingURL=concept.css.map */
