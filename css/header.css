@@ -51,26 +51,23 @@ header .header-left a {
           align-items: center;
 }
 
-header .header-left a img {
-  width: 4em;
-  height: 4em;
-  padding-right: 1.6em;
-}
-
-@media (max-width: 800px) {
-  header .header-left a img {
-    width: 3.5em;
-    height: 3.5em;
-    padding-right: 1.2em;
-  }
-}
-
 header .header-left a h1 {
   font-size: 3.2em;
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 0.18em;
   color: #FFFFFF;
+}
+
+header .header-left a h1::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url(../img/logo01.png) no-repeat;
+  background-size: contain;
+  padding-right: 0.5em;
+  vertical-align: text-bottom;
 }
 
 @media (max-width: 800px) {
@@ -170,7 +167,7 @@ header .header-sp-nav {
 
 @media (max-width: 800px) {
   header .header-sp-nav {
-    width: 40%;
+    width: 30%;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -254,5 +251,40 @@ header .ham .ham-line3.open {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 2em;
+}
+
+header.scroll-nav {
+  background-color: #FFFFFF;
+}
+
+header.scroll-nav .header-left a h1 {
+  color: #000000;
+}
+
+header.scroll-nav .header-left a h1::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url(../img/logo02.png) no-repeat;
+  background-size: contain;
+  padding-right: 0.5em;
+  vertical-align: text-bottom;
+}
+
+header.scroll-nav .header-pc-nav .header-pc-center .header-pc-menu .header-pc-room a {
+  color: #000000;
+}
+
+header.scroll-nav .header-pc-nav .header-pc-center .header-pc-menu .header-pc-food a {
+  color: #000000;
+}
+
+header.scroll-nav .header-pc-nav .header-pc-center .header-pc-menu .header-pc-spa a {
+  color: #000000;
+}
+
+header.scroll-nav .ham .ham-line {
+  background-color: #000000;
 }
 /*# sourceMappingURL=header.css.map */

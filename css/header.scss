@@ -24,24 +24,23 @@ header {
       display: flex;
       align-items: center;
 
-      img {
-        width: 4em;
-        height: 4em;
-        padding-right: 1.6em;
-
-        @include sspc {
-          width: 3.5em;
-          height: 3.5em;
-          padding-right: 1.2em;
-        }
-      }
-
       h1 {
         font-size: 3.2em;
         font-weight: bold;
         line-height: 1.5;
         letter-spacing: 0.18em;
         color: #FFFFFF;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          background: url(../img/logo01.png) no-repeat;
+          background-size: contain;
+          padding-right: 0.5em;
+          vertical-align: text-bottom;
+        }
 
         @include sspc {
           font-size: 3em;
@@ -135,7 +134,7 @@ header {
     display: none;
 
     @include sspc {
-      width: 40%;
+      width: 30%;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -154,7 +153,6 @@ header {
       }
 
       .header-sp-menu-list {
-
 
         a {
           display: block;
@@ -214,6 +212,81 @@ header {
     .ham-line3.open {
       transform: rotate(-45deg);
       top: 2em;
+    }
+  }
+}
+
+header.scroll-nav {
+  background-color: #FFFFFF;
+
+  .header-left {
+
+    a {
+
+      h1 {
+        color: #000000;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          background: url(../img/logo02.png) no-repeat;
+          background-size: contain;
+          padding-right: 0.5em;
+          vertical-align: text-bottom;
+        }
+      }
+    }
+  }
+
+  .header-pc-nav {
+
+    .header-pc-center {
+
+      .header-pc-menu {
+
+        .header-pc-room {
+
+          a {
+            color: #000000;
+          }
+        }
+
+        .header-pc-food {
+
+          a {
+            color: #000000;
+          }
+        }
+
+        .header-pc-spa {
+
+          a {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  .header-sp-nav {
+
+    .header-sp-menu {
+
+      .header-sp-menu-list {
+
+        a {
+          // color: #000000;
+        }
+      }
+    }
+  }
+
+  .ham {
+
+    .ham-line {
+      background-color: #000000;
     }
   }
 }
