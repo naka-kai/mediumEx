@@ -71,12 +71,22 @@
         </ul>
       </div>
       <div class="header-pc-right">
-        <a href="">
+        <a href="" class="js-modal-open">
           <div class="header-pc-booking-inner">
             <img src="img/calender.png" alt="宿泊予約のカレンダー画像">
             <p>宿泊予約</p>
           </div>
         </a>
+      </div>
+      <div class="modal js-modal">
+        <div class="modal-bg js-modal-close">
+          <div class="modal-contents">
+            <div>
+
+            </div>
+            <a href="" class="js-modal-close">閉じる</a>
+          </div>
+        </div>
       </div>
     </nav>
     <nav class="header-sp-nav">
@@ -84,9 +94,30 @@
         <li class="header-sp-room header-sp-menu-list"><a href="">お部屋</a></li>
         <li class="header-sp-food header-sp-menu-list"><a href="">お料理</a></li>
         <li class="header-sp-spa header-sp-menu-list"><a href="">温泉</a></li>
-        <li class="header-sp-booking header-sp-menu-list"><a href="">宿泊予約</a></li>
       </ul>
+      <div class="header-sp-booking header-sp-menu-list">
+        <a href="" class="js-modal-sp-open">
+          <div class="header-sp-booking-inner">
+            <img src="img/calender.png" alt="宿泊予約のカレンダー画像">
+            <p>宿泊予約</p>
+          </div>
+        </a>
+      </div>
     </nav>
+    <div class="modal-sp js-modal-sp">
+      <div class="modal-sp-bg js-modal-sp-close">
+        <div class="modal-sp-contents">
+          <div class="modal-sp-content-box">
+            <select name="booking-menu">
+              <option value="Cha-kaiseki">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+              <option value="stay">②平日に優雅に楽しむ、特別宿泊プラン</option>
+              <option value="family">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+            </select>
+          </div>
+          <a href="" class="js-modal-sp-close">閉じる</a>
+        </div>
+      </div>
+    </div>
     <div class="ham">
       <span class="ham-line ham-line1"></span>
       <span class="ham-line ham-line2"></span>

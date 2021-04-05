@@ -128,28 +128,56 @@ header {
         }
       }
     }
+
+    .modal {
+      display: none;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0 auto;
+
+      .modal-bg {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+
+        .modal-contents {
+          background: #FFFFFF;
+          left: 50%;
+          padding: 4em;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 60%;
+        }
+      }
+    }
   }
 
   .header-sp-nav {
-    display: none;
-
-    @include sspc {
-      width: 30%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background-color: rgba(0, 0, 0, 0.16);
-      transition: 0.3s;
-      position: fixed;
-      z-index: 20;
-      top: 7em;
-      right: -40%;
-    }
 
     .header-sp-menu {
 
+      display: none;
+
+      @include sspc {
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.16);
+        transition: 0.3s;
+        position: fixed;
+        z-index: 20;
+        top: 7em;
+        right: -40%;
+      }
+
       &:first-child {
-        margin-top: 20px;
+        padding-top: 20px;
       }
 
       .header-sp-menu-list {
@@ -162,10 +190,81 @@ header {
         }
       }
     }
+
+    .header-sp-booking {
+
+      a {
+        display: block;
+
+        .header-sp-booking-inner {
+          width: 13em;
+          height: 4.4em;
+          background-color: #978F10;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 2em;
+            height: 2em;
+            padding-right: 1em;
+          }
+
+          p {
+            font-size: 1.6em;
+            font-weight: bold;
+            line-height: 3;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
   }
 
-  .header-sp-nav.open {
+  .header-sp-menu.open {
     right: 0;
+  }
+
+  .modal-sp {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .modal-sp-bg {
+      background: rgba(0, 0, 0, 0.8);
+      height: 100vh;
+      position: absolute;
+      width: 100%;
+
+      .modal-sp-contents {
+        background: #FFFFFF;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+
+        .modal-sp-content-box {
+
+          padding: 4em;
+
+          .booking-menu {
+
+            .Cha-kaiseki {}
+
+            .stay {}
+
+            .family {}
+          }
+        }
+
+        .js-modal-sp-close {}
+      }
+    }
   }
 
   .ham {
@@ -265,19 +364,6 @@ header.scroll-nav {
           a {
             color: #000000;
           }
-        }
-      }
-    }
-  }
-
-  .header-sp-nav {
-
-    .header-sp-menu {
-
-      .header-sp-menu-list {
-
-        a {
-          // color: #000000;
         }
       }
     }
