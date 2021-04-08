@@ -157,160 +157,171 @@ header {
     }
   }
 
-  .header-sp-nav {
+  .header-sp-right {
 
-    .header-sp-menu {
-
-      display: none;
-
-      @include sspc {
-        width: 30%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.16);
-        transition: 0.3s;
-        position: fixed;
-        z-index: 20;
-        top: 7em;
-        right: -40%;
-      }
-
-      &:first-child {
-        padding-top: 20px;
-      }
-
-      .header-sp-menu-list {
-
-        a {
-          display: block;
-          font-size: 21px;
-          color: #FFFFFF;
-          padding: 1em;
-        }
-      }
-    }
-
-    .header-sp-booking {
-
-      a {
-        display: block;
-
-        .header-sp-booking-inner {
-          width: 13em;
-          height: 4.4em;
-          background-color: #978F10;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          img {
-            width: 2em;
-            height: 2em;
-            padding-right: 1em;
-          }
-
-          p {
-            font-size: 1.6em;
-            font-weight: bold;
-            line-height: 3;
-            color: #FFFFFF;
-          }
-        }
-      }
-    }
-  }
-
-  .header-sp-menu.open {
-    right: 0;
-  }
-
-  .modal-sp {
     display: none;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    .modal-sp-bg {
-      background: rgba(0, 0, 0, 0.8);
-      height: 100vh;
-      position: absolute;
-      width: 100%;
-
-      .modal-sp-contents {
-        background: #FFFFFF;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60%;
-
-        .modal-sp-content-box {
-
-          padding: 4em;
-
-          .booking-menu {
-
-            .Cha-kaiseki {}
-
-            .stay {}
-
-            .family {}
-          }
-        }
-
-        .js-modal-sp-close {}
-      }
-    }
-  }
-
-  .ham {
-    display: none;
-    width: 5em;
-    height: 5em;
-    cursor: pointer;
-    position: relative;
 
     @include sspc {
-      display: block;
+
+      display: flex;
     }
 
-    .ham-line {
-      position: absolute;
-      left: 1em;
-      width: 3em;
-      height: 0.2em;
-      background-color: #FFFFFF;
-      transition: all 0.3s;
+    .header-sp-nav {
+      margin-right: 2em;
+
+      .header-sp-menu {
+
+        display: none;
+
+        @include sspc {
+          width: 30%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          background-color: rgba(0, 0, 0, 0.16);
+          transition: 0.3s;
+          position: fixed;
+          z-index: 20;
+          top: 7em;
+          right: -40%;
+        }
+
+        &:first-child {
+          padding-top: 20px;
+        }
+
+        .header-sp-menu-list {
+
+          a {
+            display: block;
+            font-size: 21px;
+            color: #FFFFFF;
+            padding: 1em;
+          }
+        }
+      }
+
+      .header-sp-right-right {
+        display: flex;
+
+        .header-sp-booking {
+
+          a {
+            display: block;
+
+            .header-sp-booking-inner {
+              width: 13em;
+              height: 4.4em;
+              background-color: #978F10;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                width: 2em;
+                height: 2em;
+                padding-right: 1em;
+              }
+
+              p {
+                font-size: 1.6em;
+                font-weight: bold;
+                line-height: 3;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+
+        .ham {
+          display: none;
+          width: 5em;
+          height: 5em;
+          cursor: pointer;
+          position: relative;
+
+          @include sspc {
+            display: block;
+          }
+
+          .ham-line {
+            position: absolute;
+            left: 1em;
+            width: 3em;
+            height: 0.2em;
+            background-color: #FFFFFF;
+            transition: all 0.3s;
+          }
+
+          .ham-line1 {
+            top: 0.7em;
+          }
+
+          .ham-line1.open {
+            transform: rotate(45deg);
+            top: 2em;
+          }
+
+          .ham-line2 {
+            top: 1.9em;
+          }
+
+          .ham-line2.open {
+            width: 0;
+          }
+
+          .ham-line3 {
+            top: 3.2em;
+          }
+
+          .ham-line3.open {
+            transform: rotate(-45deg);
+            top: 2em;
+          }
+        }
+      }
+
     }
 
-    .ham-line1 {
-      top: 1.3em;
+    .header-sp-menu.open {
+      right: 0;
     }
 
-    .ham-line1.open {
-      transform: rotate(45deg);
-      top: 2em;
-    }
+    .modal-sp {
+      display: none;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
 
-    .ham-line2 {
-      top: 2.4em;
-    }
+      .modal-sp-bg {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        z-index: 40;
 
-    .ham-line2.open {
-      width: 0;
-    }
+        .modal-sp-contents {
+          background: #FFFFFF;
+          padding: 1em;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 70%;
 
-    .ham-line3 {
-      top: 3.5em;
-    }
+          .modal-sp-content-box {
+            padding: 6em;
 
-    .ham-line3.open {
-      transform: rotate(-45deg);
-      top: 2em;
+            .booking-menu {
+
+              padding: 1em;
+
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -369,10 +380,19 @@ header.scroll-nav {
     }
   }
 
-  .ham {
+  .header-sp-right {
 
-    .ham-line {
-      background-color: #000000;
+    .header-sp-nav {
+
+      .header-sp-right-right {
+
+        .ham {
+
+          .ham-line {
+            background-color: #000000;
+          }
+        }
+      }
     }
   }
 }

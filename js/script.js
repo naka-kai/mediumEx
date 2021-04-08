@@ -26,26 +26,30 @@ $(function () {
     return false;
   });
 
-  //宿泊予約モーダル(SP)
-  $('.js-modal-sp-open').on('click', function () {
-    $('.js-modal-sp').fadeIn();
-    return false;
-  });
-  $('.js-modal-sp-close').on('click', function () {
-    $('.js-modal-sp').fadeOut();
-    $('.modal-sp-content-box').on('click', function (e) {
-      e.stopPropagation();
-    });
-    return false;
-  });
+  
 
-  //宿泊予約を押したらハンバーガーメニュー消す(SP)
-  $('.js-modal-sp-open').on('click', function () {
-    $('.ham').fadeOut();
-    return false;
-  });
-  $('.js-modal-sp-close').on('click', function () {
-    $('.ham').fadeIn();
-    return false;
-  });
+  //宿泊予約モーダル(SP)
+  // $('.js-modal-sp-open').on('click', function () {
+  //   $('.js-modal-sp').fadeIn();
+
+    //ハンバーガーメニューをクリックしていても、宿泊予約がクリックされるとメニューが閉じる
+    // $('.header-sp-menu, .ham, .ham-line1, .ham-line2, .ham-line3').removeClass('open');
+
+  //   return false;
+  // });
+  // $('.js-modal-sp-close').on('click', function () {
+  //   $('.js-modal-sp').fadeOut();
+
+  //   しかし、.modal-sp-content-boxをクリックでキャンセルさせる
+  //   $('.modal-sp-content-box').on('click', function (e) {
+  //     e.stopPropagation();
+  //   });
+
+  //   $('.modal-sp-content-box').on('click', event => {
+  //     event.stopPropagation();
+  //   })
+
+  //   return false;
+  // });
+
 });
