@@ -19,10 +19,13 @@ $(function () {
   //宿泊予約モーダル(PC)
   $('.js-modal-open').on('click', function () {
     $('.js-modal').fadeIn();
+    $("html,body").css("overflow", "hidden");//背景固定
     return false;
   });
+
   $('.js-modal-close').on('click', function () {
     $('.js-modal').fadeOut();
+    $("html,body").removeAttr("style");//背景固定解除
     return false;
   });
 
@@ -31,13 +34,16 @@ $(function () {
   //宿泊予約モーダル(SP)
   $('.js-modal-sp-open').on('click', function () {
     $('.js-modal-sp').fadeIn();
+    $("html,body").css("overflow", "hidden");//背景固定
 
     //ハンバーガーメニューをクリックしていても、宿泊予約がクリックされるとメニューが閉じる
     $('.header-sp-menu, .ham, .ham-line1, .ham-line2, .ham-line3').removeClass('open');
     return false;
   });
+
   $('.js-modal-sp-close').on('click', function () {
     $('.js-modal-sp').fadeOut();
+    $("html,body").removeAttr("style");//背景固定解除
     return false;
   });
   //しかし、.formをクリックでキャンセルさせる
