@@ -45,6 +45,9 @@
   <!-- favicon -->
   <link rel="shortcut icon" href="/img/favicon.ico" />
 
+  <!-- flatpickr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
@@ -52,6 +55,10 @@
   <!-- javascript -->
   <script src="js/script.js"></script>
 
+  <!-- flatpickr -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!--日本語化用JS-->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
 
 </head>
 
@@ -82,7 +89,36 @@
         <div class="modal-bg js-modal-close">
           <div class="modal-contents">
             <div>
-
+              <div class="modal-content-box">
+                <form action="">
+                  <a href="" class="js-modal-close">×</a>
+                  <div class="form-title">宿泊予約</div>
+                  <div class="name">
+                    <label for="name">名前</label>
+                    <input type="text" name="name" id="name" placeholder="例:田中太郎">
+                  </div>
+                  <div class="mail">
+                    <label for="mail">メールアドレス</label>
+                    <input type="email" id="mail" name="mail" placeholder="例:Example@example.com">
+                  </div>
+                  <div class="form-select">
+                    <div class="select-title">プラン選択</div>
+                    <select name="select-menu" class="select-menu">
+                      <option value="" disabled selected>プランを選択して下さい</option>
+                      <option value="Cha-kaiseki">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                      <option value="stay">平日に優雅に楽しむ、特別宿泊プラン</option>
+                      <option value="family">絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                    </select>
+                  </div>
+                  <div class="calendar">
+                    <div class="calendar-title">日時選択</div>
+                    <input type="text" id="calendar" placeholder="日時を選択して下さい">
+                  </div>
+                  <div class="submit">
+                    <input type="submit" value="送信">
+                  </div>
+                </form>
+              </div>
             </div>
             <a href="" class="js-modal-close">閉じる</a>
           </div>
@@ -116,17 +152,39 @@
         <div class="modal-sp-bg js-modal-sp-close">
           <div class="modal-sp-contents">
             <div class="modal-sp-content-box">
-              <select name="booking-menu">
-                <option value="Cha-kaiseki">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
-                <option value="stay">②平日に優雅に楽しむ、特別宿泊プラン</option>
-                <option value="family">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
-              </select>
-            </div>
-            <a href="" class="js-modal-sp-close">閉じる</a>
-          </div>
-        </div>
-      </div>
-    </div><!-- /header-sp-right -->
+              <form action="">
+                <a href="" class="js-modal-sp-close">×</a>
+                <div class="form-title">宿泊予約</div>
+                <div class="name">
+                  <label for="name">名前</label>
+                  <input type="text" name="name" id="name" placeholder="例:田中太郎">
+                </div>
+                <div class="mail">
+                  <label for="mail">メールアドレス</label>
+                  <input type="email" id="mail" name="mail" placeholder="例:Example@example.com">
+                </div>
+                <div class="form-select">
+                  <div class="select-title">プラン選択</div>
+                  <select name="select-menu" class="select-menu">
+                    <option value="" disabled selected>プランを選択して下さい</option>
+                    <option value="Cha-kaiseki">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                    <option value="stay">平日に優雅に楽しむ、特別宿泊プラン</option>
+                    <option value="family">絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                  </select>
+                </div>
+                <div class="calendar">
+                  <div class="calendar-title">日時選択</div>
+                  <input type="text" id="calendar" placeholder="日時を選択して下さい">
+                </div>
+                <div class="submit">
+                  <input type="submit" value="送信">
+                </div>
+              </form>
+            </div><!-- /.modal-sp-content-box -->
+          </div><!-- /.modal-sp-contents -->
+        </div><!-- /.modal-sp-bg js-modal-sp-close -->
+      </div><!-- /.modal-sp -->
+    </div><!-- /.header-sp-right -->
   </header>
 
   <section class="mainvisual">
@@ -158,8 +216,10 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="service">
+    <div>
 
+    </div>
   </section>
 
 </body>

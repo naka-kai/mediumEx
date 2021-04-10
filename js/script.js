@@ -26,30 +26,32 @@ $(function () {
     return false;
   });
 
-  
+
 
   //宿泊予約モーダル(SP)
-  // $('.js-modal-sp-open').on('click', function () {
-  //   $('.js-modal-sp').fadeIn();
+  $('.js-modal-sp-open').on('click', function () {
+    $('.js-modal-sp').fadeIn();
 
     //ハンバーガーメニューをクリックしていても、宿泊予約がクリックされるとメニューが閉じる
-    // $('.header-sp-menu, .ham, .ham-line1, .ham-line2, .ham-line3').removeClass('open');
+    $('.header-sp-menu, .ham, .ham-line1, .ham-line2, .ham-line3').removeClass('open');
+    return false;
+  });
+  $('.js-modal-sp-close').on('click', function () {
+    $('.js-modal-sp').fadeOut();
+    return false;
+  });
+  //しかし、.formをクリックでキャンセルさせる
+  $('form').on('click', function (e) {
+    e.stopPropagation();
+  });
 
-  //   return false;
-  // });
-  // $('.js-modal-sp-close').on('click', function () {
-  //   $('.js-modal-sp').fadeOut();
-
-  //   しかし、.modal-sp-content-boxをクリックでキャンセルさせる
-  //   $('.modal-sp-content-box').on('click', function (e) {
-  //     e.stopPropagation();
-  //   });
-
-  //   $('.modal-sp-content-box').on('click', event => {
-  //     event.stopPropagation();
-  //   })
-
-  //   return false;
-  // });
+  // flatpickr
+  var calendar = document.getElementById('calendar');
+  var fp = flatpickr(calendar, {
+    dateFormat: 'Y-n-j(l)',
+    mode: 'range',
+    locale: "ja",
+    minDate: "today"
+  });
 
 });

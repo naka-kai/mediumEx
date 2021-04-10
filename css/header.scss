@@ -239,6 +239,7 @@ header {
           height: 5em;
           cursor: pointer;
           position: relative;
+          margin-left: 1em;
 
           @include sspc {
             display: block;
@@ -311,13 +312,140 @@ header {
           transform: translate(-50%, -50%);
           width: 70%;
 
-          .modal-sp-content-box {
-            padding: 6em;
+          form {
+            padding: 3em;
+            font-size: 1.6em;
+            color: #333;
+            position: relative;
 
-            .booking-menu {
+            .js-modal-sp-close {
+              position: absolute;
+              top: -0.2em;
+              right: 0;
+              font-weight: bold;
+              font-size: 3em;
+              color: #333;
+            }
 
-              padding: 1em;
+            .form-title {
+              font-size: 1.7em;
+              text-align: center;
+              border-bottom: 0.7px solid #e8e8e8;
+              padding-bottom: 0.5em;
+              margin-bottom: 1em;
+            }
 
+            .name {
+              padding: 0.7em 0;
+
+              label {
+                display: block;
+                padding-bottom: 0.5em;
+              }
+
+              input {
+                border: 1px solid #ccc;
+                padding: 0.5em;
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+                box-sizing: border-box;
+              }
+            }
+
+            .mail {
+              padding: 0.7em 0;
+
+              label {
+                display: block;
+                padding-bottom: 0.5em;
+              }
+
+              input {
+                border: 1px solid #ccc;
+                padding: 0.5em;
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+                box-sizing: border-box;
+              }
+            }
+
+            .form-select {
+              padding: 0.7em 0;
+              display: block;
+              position: relative;
+              width: 100%;
+              overflow: hidden;
+
+              &::after {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 6px solid transparent;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid #ccc;
+                top: 50%;
+                right: 10px;
+                margin-top: 10px;
+                pointer-events: none;
+              }
+
+              .select-title {
+                padding-bottom: 0.5em;
+              }
+
+              select {
+                border: 1px solid #ccc;
+                padding: 0.5em;
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+                color: #757575;
+                position: relative;
+
+                /* ie9対策 */
+                &:not(:target) {
+                  width: 120% \9;
+                }
+
+                option {
+                  display: block;
+                  width: 100%;
+                }
+              }
+            }
+
+            .calendar {
+              padding: 0.7em 0;
+
+              .calendar-title {
+                padding-bottom: 0.5em;
+              }
+
+              input {
+                border: 1px solid #ccc;
+                padding: 0.5em;
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+                box-sizing: border-box;
+              }
+            }
+
+            .submit {
+              text-align: center;
+              margin-top: 2em;
+
+              input {
+                border: 1px solid #ccc;
+                padding: 0.4em 5em;
+                color: #333;
+                font-size: 1em;
+              }
             }
           }
         }

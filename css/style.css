@@ -16,5 +16,34 @@ ul {
   list-style: none;
 }
 
+option,
+select,
+input[type="submit"],
+input[type="email"],
+input[type="text"],
+input[type="select"],
+input[type="option"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: 0;
+  margin: 0;
+  background: #fff;
+}
+
+/* for firefox */
+select {
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* for ie10 ie11 ie系のプルダウンの矢印を消す ie9は非対応 */
+select::-ms-expand {
+  display: none;
+}
+
 /* メディアクエリ */
 /*# sourceMappingURL=style.css.map */
