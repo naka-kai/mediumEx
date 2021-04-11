@@ -6,6 +6,7 @@ html {
 
 body {
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-size: 62.5%;
 }
 
 a {
@@ -19,7 +20,7 @@ ul {
 option,
 select,
 input[type="submit"],
-input[type="email"],
+input[type="remail"],
 input[type="text"],
 input[type="select"],
 input[type="option"] {
@@ -46,4 +47,74 @@ select::-ms-expand {
 }
 
 /* メディアクエリ */
+.service {
+  color: #000;
+}
+
+.service .service-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8rem 0;
+}
+
+.service .service-box:nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.service .service-box .service-img {
+  width: 55%;
+  height: auto;
+}
+
+.service .service-box .service-img img {
+  width: 100%;
+  height: auto;
+}
+
+.service .service-box .service-text-box {
+  margin: 1rem 0 1rem 8rem;
+}
+
+.service .service-box .service-text-box .service-title {
+  font-size: 3.6rem;
+  font-weight: 200;
+  line-height: 1.7;
+  margin-bottom: 6rem;
+}
+
+.service .service-box .service-text-box .service-text {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 200;
+  margin-bottom: 6rem;
+}
+
+.service .service-box .service-text-box .service-about-box {
+  width: 20rem;
+  height: 5.6rem;
+  border: 1px solid #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service .service-box .service-text-box .service-about-box .service-about-text {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.service .service-food-box .service-food-text-box {
+  margin: 1rem 8rem 1rem 0;
+}
 /*# sourceMappingURL=service.css.map */

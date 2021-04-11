@@ -6,16 +6,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4em;
-  padding: 2em;
+  height: 4rem;
+  padding: 2rem;
   position: fixed;
   z-index: 20;
   left: 0;
   right: 0;
 
   @include sspc {
-    height: 5em;
-    padding: 1em;
+    height: 5rem;
+    padding: 1rem;
   }
 
   .header-left {
@@ -23,30 +23,31 @@ header {
     a {
       display: flex;
       align-items: center;
+      vertical-align: middle;
 
       h1 {
-        font-size: 3.2em;
+        font-size: 3.2rem;
         font-weight: bold;
         line-height: 1.5;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.18rem;
         color: #FFFFFF;
 
         &::before {
           content: "";
           display: inline-block;
-          width: 1em;
-          height: 1em;
+          width: 3.6rem;
+          height: 3.6rem;
           background: url(../img/logo01.png) no-repeat;
           background-size: contain;
-          padding-right: 0.5em;
+          padding-right: 0.7rem;
           vertical-align: text-bottom;
         }
 
         @include sspc {
-          font-size: 3em;
+          font-size: 3rem;
           font-weight: bold;
           line-height: 1.7;
-          letter-spacing: 0.09em;
+          letter-spacing: 0.09rem;
         }
       }
     }
@@ -62,7 +63,7 @@ header {
     }
 
     .header-pc-center {
-      width: 19.8em;
+      width: 19.8rem;
 
       .header-pc-menu {
         display: flex;
@@ -72,7 +73,7 @@ header {
 
           a {
             color: #FFFFFF;
-            font-size: 1.6em;
+            font-size: 1.6rem;
             font-weight: bold;
             line-height: 3;
           }
@@ -82,7 +83,7 @@ header {
 
           a {
             color: #FFFFFF;
-            font-size: 1.6em;
+            font-size: 1.6rem;
             font-weight: bold;
             line-height: 3;
           }
@@ -92,7 +93,7 @@ header {
 
           a {
             color: #FFFFFF;
-            font-size: 1.6em;
+            font-size: 1.6rem;
             font-weight: bold;
             line-height: 3;
           }
@@ -106,21 +107,21 @@ header {
         display: block;
 
         .header-pc-booking-inner {
-          width: 17em;
-          height: 5.4em;
+          width: 17rem;
+          height: 5.4rem;
           background-color: #978F10;
           display: flex;
           align-items: center;
           justify-content: center;
 
           img {
-            width: 2em;
-            height: 2em;
-            padding-right: 1em;
+            width: 2rem;
+            height: 2rem;
+            padding-right: 1rem;
           }
 
           p {
-            font-size: 1.6em;
+            font-size: 1.6rem;
             font-weight: bold;
             line-height: 3;
             color: #FFFFFF;
@@ -147,7 +148,7 @@ header {
 
         .modal-contents {
           background: #FFFFFF;
-          padding: 1em;
+          padding: 1rem;
           position: absolute;
           left: 50%;
           top: 50%;
@@ -155,39 +156,39 @@ header {
           width: 40%;
 
           form {
-            padding: 3em;
-            font-size: 1.6em;
+            padding: 3rem;
+            font-size: 1.6rem;
             color: #333;
             position: relative;
 
             .js-modal-close {
               position: absolute;
-              top: -0.2em;
+              top: -0.2rem;
               right: 0;
               font-weight: bold;
-              font-size: 3em;
+              font-size: 3rem;
               color: #333;
             }
 
             .form-title {
-              font-size: 1.7em;
+              font-size: 1.7rem;
               text-align: center;
               border-bottom: 0.7px solid #e8e8e8;
-              padding-bottom: 0.5em;
-              margin-bottom: 1em;
+              padding-bottom: 0.5rem;
+              margin-bottom: 1rem;
             }
 
             .name {
-              padding: 0.7em 0;
+              padding: 0.7rem 0;
 
               label {
                 display: block;
-                padding-bottom: 0.5em;
+                padding-bottom: 0.5rem;
               }
 
               input {
-                border: 1px solid #ccc;
-                padding: 0.5em;
+                border: 0.1rem solid #ccc;
+                padding: 0.5rem;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
@@ -196,16 +197,16 @@ header {
             }
 
             .mail {
-              padding: 0.7em 0;
+              padding: 0.7rem 0;
 
               label {
                 display: block;
-                padding-bottom: 0.5em;
+                padding-bottom: 0.5rem;
               }
 
               input {
                 border: 1px solid #ccc;
-                padding: 0.5em;
+                padding: 0.5rem;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
@@ -214,7 +215,7 @@ header {
             }
 
             .form-select {
-              padding: 0.7em 0;
+              padding: 0.7rem 0;
               display: block;
               position: relative;
               width: 100%;
@@ -226,23 +227,23 @@ header {
                 content: '';
                 width: 0;
                 height: 0;
-                border-top: 6px solid transparent;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-top: 6px solid #ccc;
+                border-top: 0.6rem solid transparent;
+                border-left: 0.6rem solid transparent;
+                border-right: 0.6rem solid transparent;
+                border-top: 0.6rem solid #ccc;
                 top: 50%;
-                right: 10px;
-                margin-top: 10px;
+                right: 1rem;
+                margin-top: 1rem;
                 pointer-events: none;
               }
 
               .select-title {
-                padding-bottom: 0.5em;
+                padding-bottom: 0.5rem;
               }
 
               select {
                 border: 1px solid #ccc;
-                padding: 0.5em;
+                padding: 0.5rem;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
@@ -262,15 +263,15 @@ header {
             }
 
             .calendar {
-              padding: 0.7em 0;
+              padding: 0.7rem 0;
 
               .calendar-title {
-                padding-bottom: 0.5em;
+                padding-bottom: 0.5rem;
               }
 
               input {
                 border: 1px solid #ccc;
-                padding: 0.5em;
+                padding: 0.5rem;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
@@ -280,13 +281,13 @@ header {
 
             .submit {
               text-align: center;
-              margin-top: 2em;
+              margin-top: 2rem;
 
               input {
                 border: 1px solid #ccc;
-                padding: 0.4em 5em;
+                padding: 0.4rem 5rem;
                 color: #333;
-                font-size: 1em;
+                font-size: 1rem;
               }
             }
           }
@@ -305,7 +306,7 @@ header {
     }
 
     .header-sp-nav {
-      margin-right: 2em;
+      margin-right: 2rem;
 
       .header-sp-menu {
 
@@ -320,21 +321,21 @@ header {
           transition: 0.3s;
           position: fixed;
           z-index: 20;
-          top: 7em;
+          top: 7rem;
           right: -40%;
         }
 
         &:first-child {
-          padding-top: 20px;
+          padding-top: 2rem;
         }
 
         .header-sp-menu-list {
 
           a {
             display: block;
-            font-size: 21px;
+            font-size: 2.1rem;
             color: #FFFFFF;
-            padding: 1em;
+            padding: 1rem;
           }
         }
       }
@@ -348,21 +349,21 @@ header {
             display: block;
 
             .header-sp-booking-inner {
-              width: 13em;
-              height: 4.4em;
+              width: 13rem;
+              height: 4.4rem;
               background-color: #978F10;
               display: flex;
               align-items: center;
               justify-content: center;
 
               img {
-                width: 2em;
-                height: 2em;
-                padding-right: 1em;
+                width: 2rem;
+                height: 2rem;
+                padding-right: 1rem;
               }
 
               p {
-                font-size: 1.6em;
+                font-size: 1.6rem;
                 font-weight: bold;
                 line-height: 3;
                 color: #FFFFFF;
@@ -373,11 +374,11 @@ header {
 
         .ham {
           display: none;
-          width: 5em;
-          height: 5em;
+          width: 5rem;
+          height: 5rem;
           cursor: pointer;
           position: relative;
-          margin-left: 1em;
+          margin-left: 1rem;
 
           @include sspc {
             display: block;
@@ -385,24 +386,24 @@ header {
 
           .ham-line {
             position: absolute;
-            left: 1em;
-            width: 3em;
-            height: 0.2em;
+            left: 1rem;
+            width: 3rem;
+            height: 0.2rem;
             background-color: #FFFFFF;
             transition: all 0.3s;
           }
 
           .ham-line1 {
-            top: 0.7em;
+            top: 0.7rem;
           }
 
           .ham-line1.open {
             transform: rotate(45deg);
-            top: 2em;
+            top: 2rem;
           }
 
           .ham-line2 {
-            top: 1.9em;
+            top: 1.9rem;
           }
 
           .ham-line2.open {
@@ -410,12 +411,12 @@ header {
           }
 
           .ham-line3 {
-            top: 3.2em;
+            top: 3.2rem;
           }
 
           .ham-line3.open {
             transform: rotate(-45deg);
-            top: 2em;
+            top: 2rem;
           }
         }
       }
@@ -444,7 +445,7 @@ header {
 
         .modal-sp-contents {
           background: #FFFFFF;
-          padding: 1em;
+          padding: 1rem;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -452,39 +453,39 @@ header {
           width: 70%;
 
           form {
-            padding: 3em;
-            font-size: 1.6em;
+            padding: 3rem;
+            font-size: 1.6rem;
             color: #333;
             position: relative;
 
             .js-modal-sp-close {
               position: absolute;
-              top: -0.2em;
+              top: -0.2rem;
               right: 0;
               font-weight: bold;
-              font-size: 3em;
+              font-size: 3rem;
               color: #333;
             }
 
             .form-title {
-              font-size: 1.7em;
+              font-size: 1.7rem;
               text-align: center;
               border-bottom: 0.7px solid #e8e8e8;
-              padding-bottom: 0.5em;
-              margin-bottom: 1em;
+              padding-bottom: 0.5rem;
+              margin-bottom: 1rem;
             }
 
             .name {
-              padding: 0.7em 0;
+              padding: 0.7rem 0;
 
               label {
                 display: block;
-                padding-bottom: 0.5em;
+                padding-bottom: 0.5rem;
               }
 
               input {
                 border: 1px solid #ccc;
-                padding: 0.5em;
+                padding: 0.5rem;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
@@ -493,16 +494,16 @@ header {
             }
 
             .mail {
-              padding: 0.7em 0;
+              padding: 0.7rem 0;
 
               label {
                 display: block;
-                padding-bottom: 0.5em;
+                padding-bottom: 0.5rem;
               }
 
               input {
                 border: 1px solid #ccc;
-                padding: 0.5em;
+                padding: 0.5rem;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
@@ -511,7 +512,7 @@ header {
             }
 
             .form-select {
-              padding: 0.7em 0;
+              padding: 0.7rem 0;
               display: block;
               position: relative;
               width: 100%;
@@ -523,23 +524,23 @@ header {
                 content: '';
                 width: 0;
                 height: 0;
-                border-top: 6px solid transparent;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-top: 6px solid #ccc;
+                border-top: 0.6rem solid transparent;
+                border-left: 0.6rem solid transparent;
+                border-right: 0.6rem solid transparent;
+                border-top: 0.6rem solid #ccc;
                 top: 50%;
-                right: 10px;
-                margin-top: 10px;
+                right: 1rem;
+                margin-top: 1rem;
                 pointer-events: none;
               }
 
               .select-title {
-                padding-bottom: 0.5em;
+                padding-bottom: 0.5rem;
               }
 
               select {
                 border: 1px solid #ccc;
-                padding: 0.5em;
+                padding: 0.5rem;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
@@ -559,15 +560,15 @@ header {
             }
 
             .calendar {
-              padding: 0.7em 0;
+              padding: 0.7rem 0;
 
               .calendar-title {
-                padding-bottom: 0.5em;
+                padding-bottom: 0.5rem;
               }
 
               input {
                 border: 1px solid #ccc;
-                padding: 0.5em;
+                padding: 0.5rem;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
@@ -577,13 +578,13 @@ header {
 
             .submit {
               text-align: center;
-              margin-top: 2em;
+              margin-top: 2rem;
 
               input {
                 border: 1px solid #ccc;
-                padding: 0.4em 5em;
+                padding: 0.4rem 5rem;
                 color: #333;
-                font-size: 1em;
+                font-size: 1rem;
               }
             }
           }
@@ -606,11 +607,11 @@ header.scroll-nav {
         &::before {
           content: "";
           display: inline-block;
-          width: 1em;
-          height: 1em;
+          width: 3.6rem;
+          height: 3.6rem;
           background: url(../img/logo02.png) no-repeat;
           background-size: contain;
-          padding-right: 0.5em;
+          padding-right: 0.7rem;
           vertical-align: text-bottom;
         }
       }

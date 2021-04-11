@@ -1,3 +1,67 @@
 @charset "utf-8";
 
 @import 'style.scss';
+
+
+.service {
+  color: #000;
+
+  .service-box {
+    display: flex;
+    margin: 8rem 0;
+
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+
+    .service-img {
+      width: 55%;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .service-text-box {
+      margin: 1rem 0 1rem 8rem;
+
+      .service-title {
+        font-size: 3.6rem;
+        font-weight: 200;
+        line-height: 1.7;
+        margin-bottom: 6rem;
+      }
+
+      .service-text {
+        font-size: 1.6rem;
+        line-height: 2;
+        font-weight: 200;
+        margin-bottom: 6rem;
+      }
+
+      .service-about-box {
+        width: 20rem;
+        height: 5.6rem;
+        border: 1px solid #707070;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .service-about-text {
+          font-size: 1.6rem;
+          font-weight: 200;
+          line-height: 2;
+        }
+      }
+    }
+  }
+
+  .service-food-box {
+
+    .service-food-text-box {
+      margin: 1rem 8rem 1rem 0;
+    }
+  }
+}

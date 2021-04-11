@@ -20,7 +20,7 @@ ul {
 .concept {
   background-image: url(../img/bg.jpg);
   width: 100%;
-  height: 68.1em;
+  height: 68.1rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -44,11 +44,11 @@ ul {
 }
 
 .concept .concept-text-wrapper .concept-title-textbox .concept-title-text {
-  text-indent: -3em;
-  font-size: 2.8em;
+  text-indent: -3rem;
+  font-size: 2.8rem;
   font-weight: 100;
   line-height: 2.2;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.5rem;
   color: #000000;
 }
 
@@ -58,10 +58,10 @@ ul {
 }
 
 .concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 100;
   line-height: 2.2;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.3rem;
   color: #000000;
 }
 
@@ -71,10 +71,10 @@ ul {
 }
 
 .concept .concept-text-wrapper .concept-textbox2 .concept-textbox2-text {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 100;
   line-height: 2.2;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.3rem;
   color: #000000;
 }
 
@@ -84,10 +84,10 @@ ul {
 }
 
 .concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 100;
   line-height: 2.2;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.3rem;
   color: #000000;
 }
 
@@ -98,10 +98,10 @@ ul {
 }
 
 .concept .concept-text-wrapper .concept-sign-wrapper .concept-sign {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-weight: 100;
   line-height: 1.45;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.4rem;
   color: #000000;
 }
-/*# sourceMappingURL=concept.css.map */
+/*# sourcremappingURL=concept.css.map */

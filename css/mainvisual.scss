@@ -28,30 +28,30 @@
 
 .mainvisual {
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 6rem);
   position: relative;
 
   .mainvisual-text1 {
     color: #FFFFFF;
-    font-size: 3.4em;
+    font-size: 3.4rem;
     font-weight: bold;
     line-height: 1.24;
     writing-mode: vertical-rl;
     position: absolute;
-    top: 5em;
-    right: 9em;
+    top: 5rem;
+    right: 9rem;
     z-index: 11;
   }
 
   .mainvisual-text2 {
     color: #FFFFFF;
-    font-size: 3.4em;
+    font-size: 3.4rem;
     font-weight: bold;
     line-height: 1.24;
     writing-mode: vertical-rl;
     position: absolute;
-    top: 5em;
-    right: 11em;
+    top: 5rem;
+    right: 11rem;
     z-index: 11;
   }
 
@@ -65,7 +65,7 @@
       z-index: 10;
       opacity: 0;
       width: 100%;
-      height: 680px;
+      height: 68rem;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
