@@ -83,14 +83,14 @@ select::-ms-expand {
   font-size: 3.6rem;
   font-weight: 200;
   line-height: 1.7;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .service .service-box .service-text-box .service-text {
   font-size: 1.6rem;
   line-height: 2;
   font-weight: 200;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .service .service-box .service-text-box .service-about-box {
@@ -108,7 +108,8 @@ select::-ms-expand {
           justify-content: center;
 }
 
-.service .service-box .service-text-box .service-about-box .service-about-text {
+.service .service-box .service-text-box .service-about-box a {
+  color: #000;
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 2;

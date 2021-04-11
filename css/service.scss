@@ -31,14 +31,14 @@
         font-size: 3.6rem;
         font-weight: 200;
         line-height: 1.7;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
       }
 
       .service-text {
         font-size: 1.6rem;
         line-height: 2;
         font-weight: 200;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
       }
 
       .service-about-box {
@@ -49,7 +49,8 @@
         align-items: center;
         justify-content: center;
 
-        .service-about-text {
+        a {
+          color: #000;
           font-size: 1.6rem;
           font-weight: 200;
           line-height: 2;
