@@ -20,27 +20,30 @@ header {
 
   .header-left {
 
-    a {
-      display: flex;
-      align-items: center;
-      vertical-align: middle;
+    .header-logo {
 
       h1 {
-        font-size: 3.2rem;
-        font-weight: bold;
-        line-height: 1.5;
-        letter-spacing: 0.18rem;
-        color: #FFFFFF;
 
-        &::before {
-          content: "";
-          display: inline-block;
-          width: 3.6rem;
-          height: 3.6rem;
-          background: url(../img/logo01.png) no-repeat;
-          background-size: contain;
-          padding-right: 0.7rem;
-          vertical-align: text-bottom;
+        a {
+
+          display: block;
+          font-size: 3.2rem;
+          font-weight: bold;
+          line-height: 1.5;
+          letter-spacing: 0.18rem;
+          color: #FFFFFF;
+
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            background: url(../img/logo01.png) no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 0.7rem;
+            padding-left: 1rem;
+          }
         }
 
         @include sspc {
@@ -56,7 +59,7 @@ header {
   .header-pc-nav {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 85%;
 
     @include sspc {
       display: none;
@@ -599,20 +602,31 @@ header.scroll-nav {
 
   .header-left {
 
-    a {
+    .header-logo {
+
 
       h1 {
-        color: #000000;
 
-        &::before {
-          content: "";
-          display: inline-block;
-          width: 3.6rem;
-          height: 3.6rem;
-          background: url(../img/logo02.png) no-repeat;
-          background-size: contain;
-          padding-right: 0.7rem;
-          vertical-align: text-bottom;
+        a {
+
+          display: block;
+          font-size: 3.2rem;
+          font-weight: bold;
+          line-height: 1.5;
+          letter-spacing: 0.18rem;
+          color: #000000;
+
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            background: url(../img/logo02.png) no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 0.7rem;
+            padding-left: 1rem;
+          }
         }
       }
     }

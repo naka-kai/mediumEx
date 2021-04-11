@@ -6,6 +6,7 @@ html {
 
 body {
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-size: 62.5%;
 }
 
 a {
@@ -14,6 +15,35 @@ a {
 
 ul {
   list-style: none;
+}
+
+option,
+select,
+input[type="submit"],
+input[type="remail"],
+input[type="text"],
+input[type="select"],
+input[type="option"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: 0;
+  margin: 0;
+  background: #fff;
+}
+
+/* for firefox */
+select {
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* for ie10 ie11 ie系のプルダウンの矢印を消す ie9は非対応 */
+select::-ms-expand {
+  display: none;
 }
 
 /* メディアクエリ */
@@ -30,7 +60,7 @@ ul {
 
 .concept .concept-text-wrapper {
   width: 100%;
-  height: 70%;
+  height: 58%;
   position: absolute;
   margin-top: 7%;
   top: 50%;
@@ -40,11 +70,11 @@ ul {
 
 .concept .concept-text-wrapper .concept-title-textbox {
   position: absolute;
-  right: 20%;
+  right: 26%;
 }
 
 .concept .concept-text-wrapper .concept-title-textbox .concept-title-text {
-  text-indent: -3rem;
+  text-indent: -6rem;
   font-size: 2.8rem;
   font-weight: 100;
   line-height: 2.2;
@@ -54,7 +84,7 @@ ul {
 
 .concept .concept-text-wrapper .concept-textbox1 {
   position: absolute;
-  right: 35%;
+  right: 39%;
 }
 
 .concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text {
@@ -80,7 +110,7 @@ ul {
 
 .concept .concept-text-wrapper .concept-textbox3 {
   position: absolute;
-  right: 65%;
+  right: 61%;
 }
 
 .concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text {
@@ -93,7 +123,7 @@ ul {
 
 .concept .concept-text-wrapper .concept-sign-wrapper {
   position: absolute;
-  right: 80%;
+  right: 72%;
   top: 58%;
 }
 
@@ -104,4 +134,4 @@ ul {
   letter-spacing: 0.4rem;
   color: #000000;
 }
-/*# sourcremappingURL=concept.css.map */
+/*# sourceMappingURL=concept.css.map */

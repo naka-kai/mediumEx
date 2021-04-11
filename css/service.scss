@@ -5,10 +5,11 @@
 
 .service {
   color: #000;
+  padding: 4.5em;
 
   .service-box {
     display: flex;
-    margin: 8rem 0;
+    padding: 6.1rem 0;
 
     &:nth-child(2) {
       flex-direction: row-reverse;
@@ -25,20 +26,20 @@
     }
 
     .service-text-box {
-      margin: 1rem 0 1rem 8rem;
+      margin: 3.2rem 0 0 12.9rem;
 
       .service-title {
         font-size: 3.6rem;
         font-weight: 200;
         line-height: 1.7;
-        margin-bottom: 5rem;
+        margin-bottom: 7.5rem;
       }
 
       .service-text {
         font-size: 1.6rem;
         line-height: 2;
         font-weight: 200;
-        margin-bottom: 5rem;
+        margin-bottom: 7.5rem;
       }
 
       .service-about-box {
@@ -62,7 +63,7 @@
   .service-food-box {
 
     .service-food-text-box {
-      margin: 1rem 8rem 1rem 0;
+      margin: 3.2rem 12.9rem 0 0;
     }
   }
 }

@@ -6,6 +6,7 @@ html {
 
 body {
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-size: 62.5%;
 }
 
 a {
@@ -98,12 +99,13 @@ select::-ms-expand {
   font-size: 3.4rem;
   font-weight: bold;
   line-height: 1.24;
+  letter-spacing: 0.6rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   position: absolute;
-  top: 5rem;
-  right: 9rem;
+  top: 27%;
+  right: 23%;
   z-index: 11;
 }
 
@@ -112,12 +114,13 @@ select::-ms-expand {
   font-size: 3.4rem;
   font-weight: bold;
   line-height: 1.24;
+  letter-spacing: 0.6rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   position: absolute;
-  top: 5rem;
-  right: 11rem;
+  top: 26%;
+  right: 28%;
   z-index: 11;
 }
 
@@ -152,4 +155,4 @@ select::-ms-expand {
   -webkit-animation-delay: 12s;
   animation-delay: 12s;
 }
-/*# sourcremappingURL=mainvisual.css.map */
+/*# sourceMappingURL=mainvisual.css.map */

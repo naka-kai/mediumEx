@@ -65,9 +65,9 @@
 <body>
   <header>
     <div class="header-left">
-      <a href="#">
-        <h1>石井花壇</h1>
-      </a>
+      <div class="header-logo">
+          <h1><a href="#">石井花壇</a></h1>
+      </div>
     </div>
     <nav class="header-pc-nav">
       <div class="header-pc-center">
@@ -95,11 +95,11 @@
                   <div class="form-title">宿泊予約</div>
                   <div class="name">
                     <label for="name">名前</label>
-                    <input type="text" name="name" id="name" placeholder="例:田中太郎">
+                    <input type="text" name="name" id="yourname" placeholder="例:田中太郎">
                   </div>
                   <div class="mail">
                     <label for="mail">メールアドレス</label>
-                    <input type="remail" id="mail" name="mail" placeholder="例:Example@example.com">
+                    <input type="email" id="yourmail" name="mail" placeholder="例:Example@example.com">
                   </div>
                   <div class="form-select">
                     <div class="select-title">プラン選択</div>
@@ -112,7 +112,7 @@
                   </div>
                   <div class="calendar">
                     <div class="calendar-title">日時選択</div>
-                    <input type="text" id="calendar" placeholder="日時を選択して下さい">
+                    <input type="text" id="yourcalendar" placeholder="日時を選択して下さい">
                   </div>
                   <div class="submit">
                     <input type="submit" value="送信">
@@ -255,6 +255,44 @@
           <a href=""><p class="service-spa-about-text service-about-text">温泉について</p></a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="plan">
+    <div class="plan-logo-box">
+      <img src="img/logo02.png" alt="" class="plan-logo">
+    </div>
+    <div class="plan-title-box">
+      <h1 class="plan-title">おすすめご宿泊プラン</h1>
+    </div>
+    <div class="plan-plans-box">
+      <a href=""><div class="plan-plan-box plan-nodoguro-plan-box">
+        <div class="plan-content-img">
+          <img src="img/recommended01.jpg" alt="朝食付きプラン、日本近海で取れたのどぐろを朝食として…">
+        </div>
+        <div class="plan-content-text-box">
+          <h2 class="plan-content-title">朝食付きプラン、日本近海で取れた<br>のどぐろを朝食として…</h2>
+          <p class="plan-content-text">最高級と称されるのどぐろ、正式には「アカ<br>ムツ」と呼ばれる魚、味は独特の上品な味わ<br>いで、焼いても煮ても美味</p>
+        </div>
+      </div></a>
+      <a href=""><div class="plan-plan-box plan-crab-plan-box">
+        <div class="plan-content-img">
+          <img src="img/recommended02.jpg" alt="【期間限定】熱海蟹をたっぷりと愉しむプラン。">
+        </div>
+        <div class="plan-content-text-box">
+          <h2 class="plan-content-title">【期間限定】熱海蟹をたっぷりと<br>愉しむプラン。</h2>
+          <p class="plan-content-text">温海で水揚げされた蟹は「温海蟹」<br>として知られ、嗜好品として愛されて<br>きました。この宿泊プランでは存分に</p>
+        </div>
+      </div></a>
+      <a href=""><div class="plan-plan-box plan-Cha-kaiseki-plan-box">
+        <div class="plan-content-img">
+          <img src="img/recommended03.jpg" alt="【平日限定】贅沢美味懐石プラン。海辺の四季旬彩プラン。">
+        </div>
+        <div class="plan-content-text-box">
+          <h2 class="plan-content-title">【平日限定】贅沢美味懐石プラン。<br>海辺の四季旬彩プラン。</h2>
+          <p class="plan-content-text">熱海近海で取れた魚を鮮度そのままに舟盛りに<br>してご提供。生きた味をお楽しみください。</p>
+        </div>
+      </div></a>
     </div>
   </section>
 
