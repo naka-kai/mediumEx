@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+@import 'style.scss';
+
+
+.news {
+  padding: 6rem 0;
+  height: 75.7rem;
+
+  .news-container {
+    width: 118rem;
+    margin: 0 auto;
+
+    .news-logo-box {
+      text-align: center;
+      margin-bottom: 2rem;
+
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    .news-title-box {
+      text-align: center;
+      margin-bottom: 4.6rem;
+
+      .news-title {
+        font-size: 3.6rem;
+        font-weight: 200;
+        line-height: 0.9;
+      }
+    }
+
+    .news-tab-box {
+
+      .news-tab {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4.9rem;
+
+        li {
+          font-size: 1.6rem;
+          font-weight: 200;
+          line-height: 2;
+          margin-right: 5.5rem;
+          transition: .3s;
+
+          &.active {
+            text-decoration: underline solid #707070;
+            text-underline-offset: 0.2rem;
+          }
+
+          &:nth-child(2) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .news-contents {
+
+        .news-content {
+          display: none;
+
+          &.show {
+            display: block;
+          }
+
+          li {
+            display: flex;
+            justify-content: center;
+
+            a {
+              color: #000;
+
+              article {
+                display: flex;
+                width: 57rem;
+                height: 13rem;
+                background-color: #F6F6F6;
+                margin-bottom: 2rem;
+                padding-left: 1rem;
+
+                figure {
+                  position: relative;
+                  overflow: hidden;
+                  width: 10rem;
+                  height: 10rem;
+                  margin: auto 0;
+
+
+                  img {
+                    position: absolute;
+                    bottom: 0;
+                    right: -2rem;
+                    height: 100%;
+                    width: auto;
+                  }
+                }
+
+                .news-text-content {
+                  margin: 1.5rem 0 0 3rem;
+
+                  .news-text-date {
+
+                    time {
+                      font-size: 1.4rem;
+                      font-weight: 200;
+                      margin-bottom: 1rem;
+                    }
+                  }
+
+                  .news-text-excerpt {
+                    font-size: 1.6rem;
+                    font-weight: 200;
+                    line-height: 2;
+                  }
+                }
+              }
+            }
+
+            .news-left {
+              margin-right: 4.6rem;
+            }
+
+            .no-margin-bottom {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

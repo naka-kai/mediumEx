@@ -1,1 +1,181 @@
-/* No CSS *//*# sourcremappingURL=news.css.map */
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+body {
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+option,
+select,
+input[type="submit"],
+input[type="remail"],
+input[type="text"],
+input[type="select"],
+input[type="option"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: 0;
+  margin: 0;
+  background: #fff;
+}
+
+/* for firefox */
+select {
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* for ie10 ie11 ie系のプルダウンの矢印を消す ie9は非対応 */
+select::-ms-expand {
+  display: none;
+}
+
+/* メディアクエリ */
+.news {
+  padding: 6rem 0;
+  height: 75.7rem;
+}
+
+.news .news-container {
+  width: 118rem;
+  margin: 0 auto;
+}
+
+.news .news-container .news-logo-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.news .news-container .news-logo-box img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.news .news-container .news-title-box {
+  text-align: center;
+  margin-bottom: 4.6rem;
+}
+
+.news .news-container .news-title-box .news-title {
+  font-size: 3.6rem;
+  font-weight: 200;
+  line-height: 0.9;
+}
+
+.news .news-container .news-tab-box .news-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4.9rem;
+}
+
+.news .news-container .news-tab-box .news-tab li {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2;
+  margin-right: 5.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.news .news-container .news-tab-box .news-tab li.active {
+  -webkit-text-decoration: underline solid #707070;
+          text-decoration: underline solid #707070;
+  text-underline-offset: 0.2rem;
+}
+
+.news .news-container .news-tab-box .news-tab li:nth-child(2) {
+  margin-right: 0;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content {
+  display: none;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content.show {
+  display: block;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li a {
+  color: #000;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li a article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 57rem;
+  height: 13rem;
+  background-color: #F6F6F6;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li a article figure {
+  position: relative;
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+  margin: auto 0;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li a article figure img {
+  position: absolute;
+  bottom: 0;
+  right: -2rem;
+  height: 100%;
+  width: auto;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li a article .news-text-content {
+  margin: 1.5rem 0 0 3rem;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li a article .news-text-content .news-text-date time {
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li a article .news-text-content .news-text-excerpt {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li .news-left {
+  margin-right: 4.6rem;
+}
+
+.news .news-container .news-tab-box .news-contents .news-content li .no-margin-bottom {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=news.css.map */

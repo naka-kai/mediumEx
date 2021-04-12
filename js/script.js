@@ -60,4 +60,12 @@ $(function () {
     minDate: "today"
   });
 
+  //タブ
+  $('.news-tab li').click(function() {
+    var index = $('.news-tab li').index(this);
+    $('.news-tab li').removeClass('active');
+    $(this).addClass('active');
+    $('.news-contents ul').removeClass('show').eq(index).addClass('show');
+  });
+
 });
