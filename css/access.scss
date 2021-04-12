@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import 'style.scss';
+
+
+.access {
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 0 11rem;
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2;
+    margin: 1rem 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 2;
+  }
+
+  span {
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 2;
+  }
+
+  .access-container {
+    width: 118rem;
+    margin: 0 auto;
+
+    .access-logo-box {
+      text-align: center;
+      margin-bottom: 2rem;
+
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    .access-title-box {
+      text-align: center;
+
+      h1 {
+        font-size: 3.6rem;
+        font-weight: 200;
+        line-height: 0.9;
+      }
+    }
+
+    .access-top {
+      display: flex;
+      margin-top: 8.4rem;
+
+      .access-img {
+
+        img {
+          width: 65.6rem;
+          height: 37rem;
+        }
+      }
+
+      .access-text-box {
+        margin-left: 8.3rem;
+
+        .access-address {
+
+          .access-address-title {}
+
+          .access-address-number {}
+
+          .access-address-text {}
+        }
+      }
+
+      .access-telFax {
+
+        .access-telFax-title {}
+
+        .access-telFax-number {
+
+          .access-tel-number {}
+
+          .access-telFax-slash {}
+
+          .access-Fax-number {}
+        }
+      }
+
+      .access-opening {
+
+        .access-opening-title {}
+
+        .access-opening-hours {
+          margin-bottom: 1rem;
+        }
+
+        .access-opening-caution {
+          line-height: 2;
+        }
+      }
+    }
+
+    .access-bottom {
+      padding-top: 6.9rem;
+
+      .access-map {
+
+        iframe {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

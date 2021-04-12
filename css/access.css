@@ -1,1 +1,134 @@
-/* No CSS *//*# sourcremappingURL=access.css.map */
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+body {
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+option,
+select,
+input[type="submit"],
+input[type="remail"],
+input[type="text"],
+input[type="select"],
+input[type="option"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: 0;
+  margin: 0;
+  background: #fff;
+}
+
+/* for firefox */
+select {
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* for ie10 ie11 ie系のプルダウンの矢印を消す ie9は非対応 */
+select::-ms-expand {
+  display: none;
+}
+
+/* メディアクエリ */
+.access {
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 0 11rem;
+}
+
+.access h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2;
+  margin: 1rem 0;
+}
+
+.access p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.access span {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.access .access-container {
+  width: 118rem;
+  margin: 0 auto;
+}
+
+.access .access-container .access-logo-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.access .access-container .access-logo-box img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.access .access-container .access-title-box {
+  text-align: center;
+}
+
+.access .access-container .access-title-box h1 {
+  font-size: 3.6rem;
+  font-weight: 200;
+  line-height: 0.9;
+}
+
+.access .access-container .access-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8.4rem;
+}
+
+.access .access-container .access-top .access-img img {
+  width: 65.6rem;
+  height: 37rem;
+}
+
+.access .access-container .access-top .access-text-box {
+  margin-left: 8.3rem;
+}
+
+.access .access-container .access-top .access-opening .access-opening-hours {
+  margin-bottom: 1rem;
+}
+
+.access .access-container .access-top .access-opening .access-opening-caution {
+  line-height: 2;
+}
+
+.access .access-container .access-bottom {
+  padding-top: 6.9rem;
+}
+
+.access .access-container .access-bottom .access-map iframe {
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=access.css.map */
