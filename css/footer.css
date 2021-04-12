@@ -47,4 +47,111 @@ select::-ms-expand {
 }
 
 /* メディアクエリ */
+footer {
+  text-align: center;
+}
+
+footer .footer-top {
+  background-image: url(../img/bg3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6.4rem 0 6.1rem;
+}
+
+footer .footer-top .footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 9.6rem;
+}
+
+footer .footer-top .footer-nav ul li {
+  margin-right: 3.4rem;
+}
+
+footer .footer-top .footer-nav ul li:last-child {
+  margin-right: 0;
+}
+
+footer .footer-top .footer-nav ul li a {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 200;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 1.8rem;
+}
+
+footer .footer-top .footer-logo-box {
+  margin-bottom: 2rem;
+}
+
+footer .footer-top .footer-logo-box img {
+  width: 4rem;
+  height: 4rem;
+}
+
+footer .footer-top .footer-title-box {
+  margin-bottom: 7.2rem;
+}
+
+footer .footer-top .footer-title-box .footer-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+}
+
+footer .footer-top .footer-address .footer-address-number {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 3;
+  margin-right: 2.1rem;
+}
+
+footer .footer-top .footer-address .footer-address-text {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 3;
+  letter-spacing: 0.18em;
+}
+
+footer .footer-top .footer-telFax .footer-tel {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 3;
+  margin-right: 2rem;
+}
+
+footer .footer-top .footer-telFax .footer-fax {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 3;
+}
+
+footer .copyright-box {
+  background-color: #000;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright-box small {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 2;
+  color: #fff;
+}
 /*# sourceMappingURL=footer.css.map */

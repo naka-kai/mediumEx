@@ -3,3 +3,108 @@
 @import 'style.scss';
 
 
+footer {
+  text-align: center;
+
+  .footer-top {
+    background-image: url(../img/bg3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6.4rem 0 6.1rem;
+
+    .footer-nav {
+
+      ul {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 9.6rem;
+
+        li {
+          margin-right: 3.4rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            color: #000;
+            font-size: 1.8rem;
+            font-weight: 200;
+            // line-height: 1.8;
+            writing-mode: vertical-rl;
+            letter-spacing: 1.8rem;
+          }
+        }
+      }
+    }
+
+    .footer-logo-box {
+      margin-bottom: 2rem;
+
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    .footer-title-box {
+      margin-bottom: 7.2rem;
+
+      .footer-title {
+        font-size: 3.2rem;
+        font-weight: bold;
+        line-height: 1.5;
+        letter-spacing: 0.18em;
+      }
+    }
+
+    .footer-address {
+
+      .footer-address-number {
+        font-size: 1.6rem;
+        font-weight: 200;
+        line-height: 3;
+        margin-right: 2.1rem;
+      }
+
+      .footer-address-text {
+        font-size: 1.6rem;
+        font-weight: 200;
+        line-height: 3;
+        letter-spacing: 0.18em;
+      }
+    }
+
+    .footer-telFax {
+
+      .footer-tel {
+        font-size: 1.6rem;
+        font-weight: 200;
+        line-height: 3;
+        margin-right: 2rem;
+      }
+
+      .footer-fax {
+        font-size: 1.6rem;
+        font-weight: 200;
+        line-height: 3;
+      }
+    }
+  }
+
+  .copyright-box {
+    background-color: #000;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    small {
+      font-size: 1.2rem;
+      font-weight: 100;
+      line-height: 2;
+      color: #fff;
+    }
+  }
+}
