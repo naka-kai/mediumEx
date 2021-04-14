@@ -2,3 +2,25 @@
 
 @import 'style.scss';
 
+
+.room-mainvisual {
+
+  width: 100%;
+  height: 50rem;
+  background-image: url(../img/oheya-header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .room-mainvisual-text {
+    font-size: 3.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
