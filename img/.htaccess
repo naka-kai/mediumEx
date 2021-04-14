@@ -1,0 +1,5 @@
+
+AuthUserFile "/home/xs024334/kaiblo.com/htpasswd/portfolio/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user
