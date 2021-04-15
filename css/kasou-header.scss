@@ -2,6 +2,7 @@
 
 @import 'style.scss';
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -12,6 +13,8 @@ header {
   z-index: 20;
   left: 0;
   right: 0;
+  top: 0;
+  background-color: #FFFFFF;
 
   @include sspc {
     height: 5rem;
@@ -31,14 +34,14 @@ header {
           font-weight: bold;
           line-height: 1.5;
           letter-spacing: 0.18rem;
-          color: #FFFFFF;
+          color: #000;
 
           &::before {
             content: "";
             display: inline-block;
             width: 4rem;
             height: 4rem;
-            background: url(../img/logo01.png) no-repeat;
+            background: url(../img/logo02.png) no-repeat;
             background-size: contain;
             position: relative;
             top: 0.7rem;
@@ -75,7 +78,7 @@ header {
         .header-pc-room {
 
           a {
-            color: #FFFFFF;
+            color: #000;
             font-size: 1.6rem;
             font-weight: bold;
             line-height: 3;
@@ -85,7 +88,7 @@ header {
         .header-pc-food {
 
           a {
-            color: #FFFFFF;
+            color: #000;
             font-size: 1.6rem;
             font-weight: bold;
             line-height: 3;
@@ -95,7 +98,7 @@ header {
         .header-pc-spa {
 
           a {
-            color: #FFFFFF;
+            color: #000;
             font-size: 1.6rem;
             font-weight: bold;
             line-height: 3;
@@ -392,7 +395,7 @@ header {
             left: 1rem;
             width: 3rem;
             height: 0.2rem;
-            background-color: #FFFFFF;
+            background-color: #000;
             transition: all 0.3s;
           }
 
@@ -590,87 +593,6 @@ header {
                 font-size: 1rem;
               }
             }
-          }
-        }
-      }
-    }
-  }
-}
-
-header.scroll-nav {
-  background-color: #FFFFFF;
-
-  .header-left {
-
-    .header-logo {
-
-      h1 {
-
-        a {
-
-          display: block;
-          font-size: 3.2rem;
-          font-weight: bold;
-          line-height: 1.5;
-          letter-spacing: 0.18rem;
-          color: #000000;
-
-          &::before {
-            content: "";
-            display: inline-block;
-            width: 4rem;
-            height: 4rem;
-            background: url(../img/logo02.png) no-repeat;
-            background-size: contain;
-            position: relative;
-            top: 0.7rem;
-            padding-left: 1rem;
-          }
-        }
-      }
-    }
-  }
-
-  .header-pc-nav {
-
-    .header-pc-center {
-
-      .header-pc-menu {
-
-        .header-pc-room {
-
-          a {
-            color: #000000;
-          }
-        }
-
-        .header-pc-food {
-
-          a {
-            color: #000000;
-          }
-        }
-
-        .header-pc-spa {
-
-          a {
-            color: #000000;
-          }
-        }
-      }
-    }
-  }
-
-  .header-sp-right {
-
-    .header-sp-nav {
-
-      .header-sp-right-right {
-
-        .ham {
-
-          .ham-line {
-            background-color: #000000;
           }
         }
       }

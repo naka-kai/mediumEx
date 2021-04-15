@@ -1,0 +1,673 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+body {
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+option,
+select,
+input[type="submit"],
+input[type="remail"],
+input[type="text"],
+input[type="select"],
+input[type="option"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: 0;
+  margin: 0;
+  background: #fff;
+}
+
+/* for firefox */
+select {
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* for ie10 ie11 ie系のプルダウンの矢印を消す ie9は非対応 */
+select::-ms-expand {
+  display: none;
+}
+
+/* メディアクエリ */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  padding: 2rem;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 5rem;
+    padding: 1rem;
+  }
+}
+
+header .header-left .header-logo h1 a {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.18rem;
+  color: #000;
+}
+
+header .header-left .header-logo h1 a::before {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background: url(../img/logo02.png) no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 0.7rem;
+  padding-left: 1rem;
+}
+
+@media (max-width: 800px) {
+  header .header-left .header-logo h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: 0.09rem;
+  }
+}
+
+header .header-pc-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+}
+
+@media (max-width: 800px) {
+  header .header-pc-nav {
+    display: none;
+  }
+}
+
+header .header-pc-nav .header-pc-center {
+  width: 19.8rem;
+}
+
+header .header-pc-nav .header-pc-center .header-pc-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-room a {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 3;
+}
+
+header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-food a {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 3;
+}
+
+header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-spa a {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 3;
+}
+
+header .header-pc-nav .header-pc-right a {
+  display: block;
+}
+
+header .header-pc-nav .header-pc-right a .header-pc-booking-inner {
+  width: 17rem;
+  height: 5.4rem;
+  background-color: #978F10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-pc-nav .header-pc-right a .header-pc-booking-inner img {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+header .header-pc-nav .header-pc-right a .header-pc-booking-inner p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 3;
+  color: #FFFFFF;
+}
+
+header .header-pc-nav .modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .header-pc-nav .modal .modal-bg {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 40;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents {
+  background: #FFFFFF;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form {
+  padding: 3rem;
+  font-size: 1.6rem;
+  color: #333;
+  position: relative;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .js-modal-close {
+  position: absolute;
+  top: -0.2rem;
+  right: 0;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #333;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .form-title {
+  font-size: 1.7rem;
+  text-align: center;
+  border-bottom: 0.7px solid #e8e8e8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .name {
+  padding: 0.7rem 0;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .name label {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .name input {
+  border: 0.1rem solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .mail {
+  padding: 0.7rem 0;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .mail label {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .mail input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .form-select {
+  padding: 0.7rem 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .form-select::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-left: 0.6rem solid transparent;
+  border-right: 0.6rem solid transparent;
+  border-top: 0.6rem solid #ccc;
+  top: 50%;
+  right: 1rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .form-select .select-title {
+  padding-bottom: 0.5rem;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .form-select select {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  color: #757575;
+  position: relative;
+  /* ie9対策 */
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .form-select select:not(:target) {
+  width: 120% \9;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .form-select select option {
+  display: block;
+  width: 100%;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .calendar {
+  padding: 0.7rem 0;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .calendar .calendar-title {
+  padding-bottom: 0.5rem;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .calendar input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .submit {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+header .header-pc-nav .modal .modal-bg .modal-contents form .submit input {
+  border: 1px solid #ccc;
+  padding: 0.4rem 5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+header .header-sp-right {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header .header-sp-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+header .header-sp-right .header-sp-nav {
+  margin-right: 2rem;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header .header-sp-right .header-sp-nav .header-sp-menu {
+    width: 30%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.16);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 20;
+    top: 7rem;
+    right: -40%;
+  }
+}
+
+header .header-sp-right .header-sp-nav .header-sp-menu:first-child {
+  padding-top: 2rem;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-menu .header-sp-menu-list a {
+  display: block;
+  font-size: 2.1rem;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .header-sp-booking a {
+  display: block;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .header-sp-booking a .header-sp-booking-inner {
+  width: 13rem;
+  height: 4.4rem;
+  background-color: #978F10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .header-sp-booking a .header-sp-booking-inner img {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .header-sp-booking a .header-sp-booking-inner p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 3;
+  color: #FFFFFF;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .ham {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  position: relative;
+  margin-left: 1rem;
+}
+
+@media (max-width: 800px) {
+  header .header-sp-right .header-sp-nav .header-sp-right-right .ham {
+    display: block;
+  }
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .ham .ham-line {
+  position: absolute;
+  left: 1rem;
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .ham .ham-line1 {
+  top: 0.7rem;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .ham .ham-line1.open {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .ham .ham-line2 {
+  top: 1.9rem;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .ham .ham-line2.open {
+  width: 0;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .ham .ham-line3 {
+  top: 3.2rem;
+}
+
+header .header-sp-right .header-sp-nav .header-sp-right-right .ham .ham-line3.open {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 2rem;
+}
+
+header .header-sp-right .header-sp-menu.open {
+  right: 0;
+}
+
+header .header-sp-right .modal-sp {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 40;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents {
+  background: #FFFFFF;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form {
+  padding: 3rem;
+  font-size: 1.6rem;
+  color: #333;
+  position: relative;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .js-modal-sp-close {
+  position: absolute;
+  top: -0.2rem;
+  right: 0;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #333;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .form-title {
+  font-size: 1.7rem;
+  text-align: center;
+  border-bottom: 0.7px solid #e8e8e8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .name {
+  padding: 0.7rem 0;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .name label {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .name input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .mail {
+  padding: 0.7rem 0;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .mail label {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .mail input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .form-select {
+  padding: 0.7rem 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .form-select::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-left: 0.6rem solid transparent;
+  border-right: 0.6rem solid transparent;
+  border-top: 0.6rem solid #ccc;
+  top: 50%;
+  right: 1rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .form-select .select-title {
+  padding-bottom: 0.5rem;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .form-select select {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  color: #757575;
+  position: relative;
+  /* ie9対策 */
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .form-select select:not(:target) {
+  width: 120% \9;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .form-select select option {
+  display: block;
+  width: 100%;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .calendar {
+  padding: 0.7rem 0;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .calendar .calendar-title {
+  padding-bottom: 0.5rem;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .calendar input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .submit {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+header .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form .submit input {
+  border: 1px solid #ccc;
+  padding: 0.4rem 5rem;
+  color: #333;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=kasou-header.css.map */

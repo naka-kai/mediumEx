@@ -47,17 +47,18 @@ select::-ms-expand {
 }
 
 /* メディアクエリ */
-.room-mainvisual {
+.kasou-mainvisual {
+  padding-top: 4rem;
   width: 100%;
   height: 50rem;
-  background-image: url(../img/oheya-header.jpg);
+  background-image: url(../img/onsen-header.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.room-mainvisual .room-mainvisual-text {
+.kasou-mainvisual .kasou-mainvisual-text {
   font-size: 3.4rem;
   font-weight: bold;
   line-height: 1.2;
@@ -68,4 +69,4 @@ select::-ms-expand {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/*# sourceMappingURL=room-mainvisual.css.map */
+/*# sourceMappingURL=kasou-spa-mainvisual.css.map */

@@ -47,39 +47,39 @@ select::-ms-expand {
 }
 
 /* メディアクエリ */
-.room-main .room-main-breadcrumb-room::before {
+.kasou-main .kasou-main-breadcrumb-kasou::before {
   content: '＞';
   padding: 0 0.7rem;
   font-size: 1.3rem;
 }
 
-.room-main .room-main-container {
+.kasou-main .kasou-main-container {
   max-width: 118rem;
   margin: 0 auto;
 }
 
-.room-main .room-main-container .room-main-breadcrumb-box {
+.kasou-main .kasou-main-container .kasou-main-breadcrumb-box {
   margin: 3.6rem 0 9.8rem;
 }
 
-.room-main .room-main-container .room-main-breadcrumb-box .room-main-breadcrumb-list {
+.kasou-main .kasou-main-container .kasou-main-breadcrumb-box .kasou-main-breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.room-main .room-main-container .room-main-breadcrumb-box .room-main-breadcrumb-list .room-main-breadcrumb-item a {
+.kasou-main .kasou-main-container .kasou-main-breadcrumb-box .kasou-main-breadcrumb-list .kasou-main-breadcrumb-item a {
   color: #000;
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 2;
 }
 
-.room-main .room-main-container .room-main-breadcrumb-box .room-main-breadcrumb-list .room-main-breadcrumb-item a:hover {
+.kasou-main .kasou-main-container .kasou-main-breadcrumb-box .kasou-main-breadcrumb-list .kasou-main-breadcrumb-item a:hover {
   text-decoration: underline;
 }
 
-.room-main .room-main-container .room-main-title {
+.kasou-main .kasou-main-container .kasou-main-title {
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 2;
@@ -87,7 +87,7 @@ select::-ms-expand {
   margin-bottom: 7.8rem;
 }
 
-.room-main .room-main-container .room-main-wrapper {
+.kasou-main .kasou-main-container .kasou-main-wrapper {
   height: 43.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,12 +96,12 @@ select::-ms-expand {
   margin-bottom: 8.4rem;
 }
 
-.room-main .room-main-container .room-main-wrapper .room-main-img img {
+.kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-img img {
   width: 52.5rem;
   height: 30rem;
 }
 
-.room-main .room-main-container .room-main-wrapper .room-main-text-box {
+.kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box {
   width: 81.3rem;
   height: 38.1rem;
   background-image: url(../img/bg.jpg);
@@ -114,42 +114,42 @@ select::-ms-expand {
   z-index: -1;
 }
 
-.room-main .room-main-container .room-main-wrapper .room-main-text-box .room-main-text-box-inner {
+.kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner {
   margin: 6rem 1.8rem 0 24.4rem;
 }
 
-.room-main .room-main-container .room-main-wrapper .room-main-text-box .room-main-text-box-inner .room-main-text-title {
+.kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner .kasou-main-text-title {
   font-size: 2.4rem;
   font-weight: 200;
   line-height: 1.3;
   margin-bottom: 5.2rem;
 }
 
-.room-main .room-main-container .room-main-wrapper .room-main-text-box .room-main-text-box-inner .room-main-text {
+.kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner .kasou-main-text {
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 2;
   margin-bottom: 5.2rem;
 }
 
-.room-main .room-main-container .room-main-wrapper .room-main-text-box .room-main-text-box-inner .room-main-caution {
+.kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner .kasou-main-caution {
   font-size: 1.4rem;
   font-weight: 200;
   line-height: 1.5;
 }
 
-.room-main .room-main-container .room-main-wrapper2 {
+.kasou-main .kasou-main-container .kasou-main-wrapper2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.room-main .room-main-container .room-main-wrapper2 .room-main-text-box {
+.kasou-main .kasou-main-container .kasou-main-wrapper2 .kasou-main-text-box {
   left: 0;
 }
 
-.room-main .room-main-container .room-main-wrapper2 .room-main-text-box .room-main-text-box-inner {
+.kasou-main .kasou-main-container .kasou-main-wrapper2 .kasou-main-text-box .kasou-main-text-box-inner {
   margin: 6rem 24.4rem 0 6rem;
 }
-/*# sourceMappingURL=room-main.css.map */
+/*# sourceMappingURL=kasou-main.css.map */
