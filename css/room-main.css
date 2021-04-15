@@ -1,0 +1,155 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+body {
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+option,
+select,
+input[type="submit"],
+input[type="remail"],
+input[type="text"],
+input[type="select"],
+input[type="option"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: 0;
+  margin: 0;
+  background: #fff;
+}
+
+/* for firefox */
+select {
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* for ie10 ie11 ie系のプルダウンの矢印を消す ie9は非対応 */
+select::-ms-expand {
+  display: none;
+}
+
+/* メディアクエリ */
+.room-main .room-main-breadcrumb-room::before {
+  content: '＞';
+  padding: 0 0.7rem;
+  font-size: 1.3rem;
+}
+
+.room-main .room-main-container {
+  max-width: 118rem;
+  margin: 0 auto;
+}
+
+.room-main .room-main-container .room-main-breadcrumb-box {
+  margin: 3.6rem 0 9.8rem;
+}
+
+.room-main .room-main-container .room-main-breadcrumb-box .room-main-breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.room-main .room-main-container .room-main-breadcrumb-box .room-main-breadcrumb-list .room-main-breadcrumb-item a {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.room-main .room-main-container .room-main-breadcrumb-box .room-main-breadcrumb-list .room-main-breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.room-main .room-main-container .room-main-title {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 7.8rem;
+}
+
+.room-main .room-main-container .room-main-wrapper {
+  height: 43.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 8.4rem;
+}
+
+.room-main .room-main-container .room-main-wrapper .room-main-img img {
+  width: 52.5rem;
+  height: 30rem;
+}
+
+.room-main .room-main-container .room-main-wrapper .room-main-text-box {
+  width: 81.3rem;
+  height: 38.1rem;
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.room-main .room-main-container .room-main-wrapper .room-main-text-box .room-main-text-box-inner {
+  margin: 6rem 1.8rem 0 24.4rem;
+}
+
+.room-main .room-main-container .room-main-wrapper .room-main-text-box .room-main-text-box-inner .room-main-text-title {
+  font-size: 2.4rem;
+  font-weight: 200;
+  line-height: 1.3;
+  margin-bottom: 5.2rem;
+}
+
+.room-main .room-main-container .room-main-wrapper .room-main-text-box .room-main-text-box-inner .room-main-text {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2;
+  margin-bottom: 5.2rem;
+}
+
+.room-main .room-main-container .room-main-wrapper .room-main-text-box .room-main-text-box-inner .room-main-caution {
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.room-main .room-main-container .room-main-wrapper2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.room-main .room-main-container .room-main-wrapper2 .room-main-text-box {
+  left: 0;
+}
+
+.room-main .room-main-container .room-main-wrapper2 .room-main-text-box .room-main-text-box-inner {
+  margin: 6rem 24.4rem 0 6rem;
+}
+/*# sourceMappingURL=room-main.css.map */
