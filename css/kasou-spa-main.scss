@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+@import 'style.scss';
+
+.kasou-main {
+
+  .kasou-main-breadcrumb-kasou {
+    &::before {
+      content: '＞';
+      padding: 0 0.7rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  .kasou-main-container {
+    max-width: 118rem;
+    margin: 0 auto;
+
+    .kasou-main-breadcrumb-box {
+      margin: 3.6rem 0 9.8rem;
+
+      .kasou-main-breadcrumb-list {
+        display: flex;
+
+        .kasou-main-breadcrumb-item {
+
+          a {
+            color: #000;
+            font-size: 1.6rem;
+            font-weight: 200;
+            line-height: 2;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .kasou-main-title {
+      font-size: 1.6rem;
+      font-weight: 200;
+      line-height: 2;
+      text-align: center;
+      margin-bottom: 7.8rem;
+    }
+
+    .kasou-main-wrapper {
+      height: 43.8rem;
+      display: flex;
+      position: relative;
+      margin-bottom: 8.4rem;
+
+      .kasou-main-img {
+        img {
+          width: 52.5rem;
+          height: 30rem;
+        }
+      }
+
+      .kasou-main-text-box {
+        width: 81.3rem;
+        height: 38.1rem;
+        background-image: url(../img/bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+
+        .kasou-main-text-box-inner {
+          margin: 6rem 1.8rem 0 24.4rem;
+
+          .kasou-main-text-title {
+            font-size: 2.4rem;
+            font-weight: 200;
+            line-height: 1.3;
+            margin-bottom: 5.2rem;
+          }
+
+          .kasou-main-text {
+            font-size: 1.6rem;
+            font-weight: 200;
+            line-height: 2;
+            margin-bottom: 5.2rem;
+          }
+
+          .kasou-main-caution {
+            font-size: 1.4rem;
+            font-weight: 200;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+
+    .kasou-main-wrapper2 {
+      flex-direction: row-reverse;
+
+      .kasou-main-text-box {
+        left: 0;
+
+        .kasou-main-text-box-inner {
+
+          margin: 6rem 24.4rem 0 6rem;
+        }
+      }
+    }
+
+    .effect {
+      padding: 9.5rem 0 7.4rem;
+      border-width: 1px 0;
+      border-style: solid;
+      border-color: #E7E7E7;
+      margin-bottom: 9.7rem;
+
+      .effect-wrapper {
+
+        h2 {
+          font-size: 2.6rem;
+          font-weight: 200;
+          line-height: 1.2;
+          text-align: center;
+          margin-bottom: 5rem;
+        }
+
+        table {
+          max-width: 88rem;
+          border-collapse: collapse;
+          margin: 0 auto;
+
+          tr {
+            font-size: 1.5rem;
+            font-weight: 200;
+            line-height: 2.1;
+            border-width: 1px 0;
+            border-style: solid;
+            border-color: #E7E7E7;
+
+            .effect-title {
+              width: 22rem;
+              padding: 1.8rem 0;
+            }
+
+            .effect-text {
+              padding: 1.8rem 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
