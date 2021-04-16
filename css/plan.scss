@@ -35,34 +35,30 @@
     justify-content: space-between;
     margin: 0 28rem;
 
-    a {
-      color: #000;
+    .plan-plan-box {
 
-      .plan-plan-box {
+      .plan-content-img {
 
-        .plan-content-img {
+        img {
+          width: 33.1rem;
+          height: 20.9rem;
+        }
+      }
 
-          img {
-            width: 33.1rem;
-            height: 20.9rem;
-          }
+      .plan-content-text-box {
+        padding-top: 3.2rem;
+
+        .plan-content-title {
+          font-size: 2rem;
+          font-weight: 200;
+          line-height: 1.6;
+          margin-bottom: 3.2rem;
         }
 
-        .plan-content-text-box {
-          padding-top: 3.2rem;
-
-          .plan-content-title {
-            font-size: 2rem;
-            font-weight: 200;
-            line-height: 1.6;
-            margin-bottom: 3.2rem;
-          }
-
-          .plan-content-text {
-            font-size: 1.6rem;
-            font-weight: 200;
-            line-height: 2;
-          }
+        .plan-content-text {
+          font-size: 1.6rem;
+          font-weight: 200;
+          line-height: 2;
         }
       }
     }

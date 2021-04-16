@@ -13,10 +13,15 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 ul {
   list-style: none;
 }
 
+/* formの初期化 */
 option,
 select,
 input[type="submit"],
@@ -104,7 +109,7 @@ select::-ms-expand {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   position: absolute;
-  top: 27%;
+  top: 34%;
   right: 23%;
   z-index: 11;
 }
@@ -119,7 +124,7 @@ select::-ms-expand {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   position: absolute;
-  top: 26%;
+  top: 34%;
   right: 28%;
   z-index: 11;
 }
@@ -135,7 +140,7 @@ select::-ms-expand {
   z-index: 10;
   opacity: 0;
   width: 100%;
-  height: 68rem;
+  height: 100rem;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
