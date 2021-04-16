@@ -14,12 +14,17 @@ body {
 
 a {
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 ul {
   list-style: none;
 }
 
+/* formの初期化 */
 option,
 select,
 input[type="submit"],
