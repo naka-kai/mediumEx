@@ -42,6 +42,10 @@
     top: 34%;
     right: 23%;
     z-index: 11;
+
+    @media screen and (max-width: 500px) {
+      right: 20%;
+    }
   }
 
   .mainvisual-text2 {
@@ -55,6 +59,22 @@
     top: 34%;
     right: 28%;
     z-index: 11;
+
+    @media screen and (max-width: 1300px) {
+      right: 30%;
+    }
+
+    @include spc {
+      right: 32%;
+    }
+
+    @include sspc {
+      right: 34%;
+    }
+
+    @media screen and (max-width: 650px) {
+      right: 36%;
+    }
   }
 
   .main_imgBox {
