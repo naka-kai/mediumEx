@@ -70,9 +70,30 @@ $(function () {
 
   //Aos
   AOS.init({
-    duration: 1000,
     easing: 'ease-in-out-sine',
     once: false,
   });
+
+
+  //下層ページのタイトルがfade
+  $(window).scroll(function () {
+    // クラスを追加するwindowの位置を設定
+    var scrollTop = $(this).scrollTop();
+    var scrollBottom = scrollTop + $(this).height();
+    var effectPos = scrollBottom - 50;
+
+    // eachでliを順番に処理
+    $(".fade").each(function (i) {
+      if (effectPos > $(this).offset().top) {
+        var that = this;
+
+        // 0.2s毎にずれて表示
+        setTimeout(function () {
+          $(that).addClass("fadein");
+        }, 200 * i);
+      }
+    });
+  });
+
 
 });

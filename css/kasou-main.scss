@@ -38,12 +38,21 @@
       }
     }
 
-    .kasou-main-title {
-      font-size: 1.6rem;
-      font-weight: 200;
-      line-height: 2;
-      text-align: center;
+    .kasou-main-title-box {
       margin-bottom: 7.8rem;
+
+      .kasou-main-title {
+        font-size: 1.6rem;
+        font-weight: 200;
+        line-height: 2;
+        text-align: center;
+        opacity: 0;
+        transition: 2s;
+      }
+
+      .fadein {
+        opacity: 1;
+      }
     }
 
     .kasou-main-wrapper {
