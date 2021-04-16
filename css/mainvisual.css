@@ -118,6 +118,12 @@ select::-ms-expand {
   z-index: 11;
 }
 
+@media (max-width: 1000px) {
+  .mainvisual .mainvisual-text1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .mainvisual .mainvisual-text1 {
     right: 20%;
@@ -148,18 +154,7 @@ select::-ms-expand {
 @media (max-width: 1000px) {
   .mainvisual .mainvisual-text2 {
     right: 32%;
-  }
-}
-
-@media (max-width: 800px) {
-  .mainvisual .mainvisual-text2 {
-    right: 34%;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .mainvisual .mainvisual-text2 {
-    right: 36%;
+    font-size: 2.5rem;
   }
 }
 

@@ -2,21 +2,30 @@
 html {
   font-size: 62.5%;
   /* -> 10px; */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
   font-size: 62.5%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 ul {
   list-style: none;
 }
 
+/* formの初期化 */
 option,
 select,
 input[type="submit"],
@@ -82,6 +91,55 @@ select::-ms-expand {
   color: #000000;
 }
 
+@media screen and (max-width: 900px) {
+  .concept .concept-text-wrapper .concept-title-textbox .concept-title-text {
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .concept .concept-text-wrapper .concept-title-textbox .concept-title-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .concept .concept-text-wrapper .concept-title-textbox .concept-title-text {
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .concept .concept-text-wrapper .concept-title-textbox .concept-title-text {
+    line-height: 1.2;
+    text-indent: -4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .concept .concept-text-wrapper .concept-title-textbox .concept-title-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .concept .concept-text-wrapper .concept-title-textbox {
+    right: 22%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .concept .concept-text-wrapper .concept-title-textbox {
+    right: 16%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .concept .concept-text-wrapper .concept-title-textbox {
+    right: 10%;
+  }
+}
+
 .concept .concept-text-wrapper .concept-textbox1 {
   position: absolute;
   right: 39%;
@@ -93,6 +151,48 @@ select::-ms-expand {
   line-height: 2.2;
   letter-spacing: 0.3rem;
   color: #000000;
+}
+
+@media screen and (max-width: 1350px) {
+  .concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text {
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .concept .concept-text-wrapper .concept-textbox1 .concept-textbox1-text {
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .concept .concept-text-wrapper .concept-textbox1 {
+    right: 36%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .concept .concept-text-wrapper .concept-textbox1 {
+    right: 33%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .concept .concept-text-wrapper .concept-textbox1 {
+    right: 29%;
+  }
 }
 
 .concept .concept-text-wrapper .concept-textbox2 {
@@ -108,6 +208,30 @@ select::-ms-expand {
   color: #000000;
 }
 
+@media screen and (max-width: 1350px) {
+  .concept .concept-text-wrapper .concept-textbox2 .concept-textbox2-text {
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .concept .concept-text-wrapper .concept-textbox2 .concept-textbox2-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .concept .concept-text-wrapper .concept-textbox2 .concept-textbox2-text {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .concept .concept-text-wrapper .concept-textbox2 .concept-textbox2-text {
+    line-height: 1.2;
+  }
+}
+
 .concept .concept-text-wrapper .concept-textbox3 {
   position: absolute;
   right: 61%;
@@ -119,6 +243,48 @@ select::-ms-expand {
   line-height: 2.2;
   letter-spacing: 0.3rem;
   color: #000000;
+}
+
+@media screen and (max-width: 1350px) {
+  .concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text {
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .concept .concept-text-wrapper .concept-textbox3 .concept-textbox3-text {
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .concept .concept-text-wrapper .concept-textbox3 {
+    right: 65%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .concept .concept-text-wrapper .concept-textbox3 {
+    right: 67%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .concept .concept-text-wrapper .concept-textbox3 {
+    right: 71%;
+  }
 }
 
 .concept .concept-text-wrapper .concept-sign-wrapper {
@@ -133,5 +299,47 @@ select::-ms-expand {
   line-height: 1.45;
   letter-spacing: 0.4rem;
   color: #000000;
+}
+
+@media screen and (max-width: 1350px) {
+  .concept .concept-text-wrapper .concept-sign-wrapper .concept-sign {
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .concept .concept-text-wrapper .concept-sign-wrapper .concept-sign {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .concept .concept-text-wrapper .concept-sign-wrapper .concept-sign {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .concept .concept-text-wrapper .concept-sign-wrapper .concept-sign {
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .concept .concept-text-wrapper .concept-sign-wrapper {
+    right: 79%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .concept .concept-text-wrapper .concept-sign-wrapper {
+    right: 85%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .concept .concept-text-wrapper .concept-sign-wrapper {
+    right: 90%;
+  }
 }
 /*# sourceMappingURL=concept.css.map */

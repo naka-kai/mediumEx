@@ -43,6 +43,10 @@
     right: 23%;
     z-index: 11;
 
+    @include spc {
+      font-size: 2.5rem;
+    }
+
     @media screen and (max-width: 500px) {
       right: 20%;
     }
@@ -66,14 +70,7 @@
 
     @include spc {
       right: 32%;
-    }
-
-    @include sspc {
-      right: 34%;
-    }
-
-    @media screen and (max-width: 650px) {
-      right: 36%;
+      font-size: 2.5rem;
     }
   }
 
