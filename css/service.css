@@ -251,22 +251,22 @@ select::-ms-expand {
   }
 }
 
-.service .service-box .service-text-box .service-text .small {
+.service .service-box .service-text-box .service-text .service-small {
   display: none;
 }
 
 @media screen and (max-width: 480px) {
-  .service .service-box .service-text-box .service-text .small {
+  .service .service-box .service-text-box .service-text .service-small {
     display: block;
   }
 }
 
-.service .service-box .service-text-box .service-text .smallNone {
+.service .service-box .service-text-box .service-text .service-smallNone {
   display: block;
 }
 
 @media screen and (max-width: 480px) {
-  .service .service-box .service-text-box .service-text .smallNone {
+  .service .service-box .service-text-box .service-text .service-smallNone {
     display: none;
   }
 }

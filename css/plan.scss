@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   padding: 6rem 0 14.4rem;
 
+  @media screen and (max-width: 1100px) {
+    display: block;
+    padding: 6rem 0 10rem;
+  }
+
   .plan-logo-box {
 
     .plan-logo {
@@ -16,6 +21,16 @@
       height: 4rem;
       display: block;
       margin: 0 auto 2rem;
+
+      @media screen and (max-width: 800px) {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+
+      @media screen and (max-width: 561px) {
+        width: 3rem;
+        height: 3rem;
+      }
     }
   }
 
@@ -27,6 +42,14 @@
       font-weight: 200;
       line-height: 0.9;
       text-align: center;
+
+      @media screen and (max-width: 800px) {
+        font-size: 3rem;
+      }
+
+      @media screen and (max-width: 561px) {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -35,30 +58,112 @@
     justify-content: space-between;
     margin: 0 28rem;
 
+    @media screen and (max-width: 1700px) {
+      margin: 0 10rem;
+    }
+
+    @media screen and (max-width: 1350px) {
+      margin: 0 2rem;
+    }
+
+    @media screen and (max-width: 1100px) {
+      display: block;
+      text-align: center;
+    }
+
     .plan-plan-box {
+
+      @media screen and (max-width: 1100px) {
+        margin-bottom: 10rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
 
       .plan-content-img {
 
         img {
           width: 33.1rem;
           height: 20.9rem;
+
+          @media screen and (max-width: 1100px) {
+            width: 70%;
+            height: auto;
+          }
         }
       }
 
       .plan-content-text-box {
         padding-top: 3.2rem;
 
+        @media screen and (max-width: 1100px) {
+          padding-top: 2rem;
+          width: 70%;
+          margin: 0 auto;
+        }
+
         .plan-content-title {
           font-size: 2rem;
           font-weight: 200;
           line-height: 1.6;
           margin-bottom: 3.2rem;
+
+          @media screen and (max-width: 1100px) {
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+          }
+
+          @media screen and (max-width: 610px) {
+            font-size: 2.3rem;
+          }
+
+          @media screen and (max-width: 561px) {
+            font-size: 2rem;
+          }
+
+          @media screen and (max-width: 378px) {
+            font-size: 1.6rem;
+          }
+
+          .plan-smallNone {
+            @media screen and (max-width: 1100px) {
+              display: none;
+            }
+          }
+
+          .plan-smallDone {
+            @media screen and (max-width: 1100px) {
+              display: block;
+            }
+          }
         }
 
         .plan-content-text {
           font-size: 1.6rem;
           font-weight: 200;
           line-height: 2;
+
+          @media screen and (max-width: 561px) {
+            font-size: 1.4rem;
+          }
+
+          @media screen and (max-width: 378px) {
+            font-size: 1.2rem;
+          }
+
+
+          .plan-smallNone {
+            @media screen and (max-width: 1100px) {
+              display: none;
+            }
+          }
+
+          .plan-smallDone {
+            @media screen and (max-width: 1100px) {
+              display: block;
+            }
+          }
         }
       }
     }
