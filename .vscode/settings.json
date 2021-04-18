@@ -8,5 +8,6 @@
     "kasou",
     "mainbg",
     "textbox"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
