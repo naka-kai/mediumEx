@@ -109,8 +109,14 @@ select::-ms-expand {
 
 @media screen and (max-width: 965px) {
   .service .service-box .service-img {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service .service-box .service-img {
+    width: 85%;
   }
 }
 
