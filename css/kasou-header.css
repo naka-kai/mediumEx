@@ -104,12 +104,47 @@ header .header-left .header-logo h1 a::before {
   padding-left: 1rem;
 }
 
-@media (max-width: 800px) {
-  header .header-left .header-logo h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.7;
-    letter-spacing: 0.09rem;
+@media screen and (max-width: 450px) {
+  header .header-left .header-logo h1 a::before {
+    width: 3rem;
+    height: 3rem;
+    top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .header-left .header-logo h1 a::before {
+    width: 2.8rem;
+    height: 2.8rem;
+    top: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header .header-left .header-logo h1 a::before {
+    width: 2.4rem;
+    height: 2.4rem;
+    top: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .header-left .header-logo h1 a {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .header-left .header-logo h1 a {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header .header-left .header-logo h1 a {
+    font-size: 2.2rem;
   }
 }
 
@@ -121,6 +156,18 @@ header .header-pc-nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 85%;
+}
+
+@media screen and (max-width: 1550px) {
+  header .header-pc-nav {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  header .header-pc-nav {
+    width: 75%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -149,11 +196,23 @@ header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-room a {
   line-height: 3;
 }
 
+@media screen and (max-width: 1400px) {
+  header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-room a {
+    margin-right: 2rem;
+  }
+}
+
 header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-food a {
   color: #000;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 3;
+}
+
+@media screen and (max-width: 1400px) {
+  header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-food a {
+    margin-right: 2rem;
+  }
 }
 
 header .header-pc-nav .header-pc-center .header-pc-menu .header-pc-spa a {
@@ -380,6 +439,12 @@ header .header-sp-right .header-sp-nav {
   margin-right: 2rem;
 }
 
+@media screen and (max-width: 450px) {
+  header .header-sp-right .header-sp-nav {
+    margin-right: 0;
+  }
+}
+
 header .header-sp-right .header-sp-nav .header-sp-menu {
   display: none;
 }
@@ -441,6 +506,15 @@ header .header-sp-right .header-sp-nav .header-sp-right-right .header-sp-booking
           justify-content: center;
 }
 
+@media screen and (max-width: 400px) {
+  header .header-sp-right .header-sp-nav .header-sp-right-right .header-sp-booking a .header-sp-booking-inner {
+    width: 11rem;
+    height: 4.2rem;
+    position: relative;
+    top: 0.2rem;
+  }
+}
+
 header .header-sp-right .header-sp-nav .header-sp-right-right .header-sp-booking a .header-sp-booking-inner img {
   width: 2rem;
   height: 2rem;
@@ -466,6 +540,12 @@ header .header-sp-right .header-sp-nav .header-sp-right-right .ham {
 @media (max-width: 800px) {
   header .header-sp-right .header-sp-nav .header-sp-right-right .ham {
     display: block;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .header-sp-right .header-sp-nav .header-sp-right-right .ham {
+    margin-left: 0;
   }
 }
 
