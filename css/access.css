@@ -71,10 +71,50 @@ select::-ms-expand {
   margin: 1rem 0;
 }
 
+@media (max-width: 1280px) {
+  .access h2 {
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .access h2 {
+    line-height: 2;
+  }
+}
+
 .access p {
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 2;
+}
+
+@media (max-width: 1280px) {
+  .access p {
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .access p {
+    line-height: 2;
+  }
+}
+
+.access p .access-smallDone {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .access p .access-smallDone {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .access p .access-smallDone {
+    display: none;
+  }
 }
 
 .access span {
@@ -83,9 +123,27 @@ select::-ms-expand {
   line-height: 2;
 }
 
+@media (max-width: 1280px) {
+  .access span {
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .access span {
+    line-height: 2;
+  }
+}
+
 .access .access-container {
   width: 118rem;
   margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .access .access-container {
+    width: 90%;
+  }
 }
 
 .access .access-container .access-logo-box {
@@ -98,6 +156,20 @@ select::-ms-expand {
   height: 4rem;
 }
 
+@media screen and (max-width: 800px) {
+  .access .access-container .access-logo-box img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .access .access-container .access-logo-box img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 .access .access-container .access-title-box {
   text-align: center;
 }
@@ -108,6 +180,18 @@ select::-ms-expand {
   line-height: 0.9;
 }
 
+@media screen and (max-width: 800px) {
+  .access .access-container .access-title-box h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .access .access-container .access-title-box h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .access .access-container .access-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,13 +199,46 @@ select::-ms-expand {
   margin-top: 8.4rem;
 }
 
+@media screen and (max-width: 950px) {
+  .access .access-container .access-top {
+    display: block;
+    text-align: center;
+  }
+}
+
 .access .access-container .access-top .access-img img {
   width: 65.6rem;
   height: 37rem;
 }
 
+@media (max-width: 1280px) {
+  .access .access-container .access-top .access-img img {
+    width: 45vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .access .access-container .access-top .access-img img {
+    width: 80vw;
+  }
+}
+
 .access .access-container .access-top .access-text-box {
   margin-left: 8.3rem;
+}
+
+@media (max-width: 1280px) {
+  .access .access-container .access-top .access-text-box {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .access .access-container .access-top .access-text-box {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
 }
 
 .access .access-container .access-top .access-opening .access-opening-hours {
@@ -132,12 +249,33 @@ select::-ms-expand {
   line-height: 2;
 }
 
+@media (max-width: 1280px) {
+  .access .access-container .access-top .access-opening .access-opening-caution {
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .access .access-container .access-top .access-opening .access-opening-caution {
+    line-height: 2;
+  }
+}
+
 .access .access-container .access-bottom {
   padding-top: 6.9rem;
 }
 
+.access .access-container .access-bottom .access-map {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+}
+
 .access .access-container .access-bottom .access-map iframe {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=access.css.map */

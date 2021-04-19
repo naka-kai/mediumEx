@@ -15,23 +15,64 @@
     font-weight: bold;
     line-height: 2;
     margin: 1rem 0;
+
+    @include mpc {
+      line-height: 1.4;
+    }
+
+    @media screen and (max-width: 950px) {
+      line-height: 2;
+    }
   }
 
   p {
     font-size: 1.6rem;
     font-weight: 200;
     line-height: 2;
+
+    @include mpc {
+      line-height: 1.4;
+    }
+
+    @media screen and (max-width: 950px) {
+      line-height: 2;
+    }
+
+    .access-smallDone {
+      display: none;
+
+      @include mpc {
+        display: block;
+      }
+
+      @media screen and (max-width: 950px) {
+        display: none;
+
+      }
+    }
   }
 
   span {
     font-size: 1.6rem;
     font-weight: 200;
     line-height: 2;
+
+    @include mpc {
+      line-height: 1.4;
+    }
+
+    @media screen and (max-width: 950px) {
+      line-height: 2;
+    }
   }
 
   .access-container {
     width: 118rem;
     margin: 0 auto;
+
+    @include mpc {
+      width: 90%;
+    }
 
     .access-logo-box {
       text-align: center;
@@ -40,6 +81,16 @@
       img {
         width: 4rem;
         height: 4rem;
+
+        @media screen and (max-width: 800px) {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+
+        @media screen and (max-width: 561px) {
+          width: 3rem;
+          height: 3rem;
+        }
       }
     }
 
@@ -50,6 +101,14 @@
         font-size: 3.6rem;
         font-weight: 200;
         line-height: 0.9;
+
+        @media screen and (max-width: 800px) {
+          font-size: 3rem;
+        }
+
+        @media screen and (max-width: 561px) {
+          font-size: 2.5rem;
+        }
       }
     }
 
@@ -57,16 +116,39 @@
       display: flex;
       margin-top: 8.4rem;
 
+      @media screen and (max-width: 950px) {
+        display: block;
+        text-align: center;
+      }
+
       .access-img {
 
         img {
           width: 65.6rem;
           height: 37rem;
+
+          @include mpc {
+            width: 45vw;
+            height: auto;
+          }
+
+          @media screen and (max-width: 950px) {
+            width: 80vw;
+          }
         }
       }
 
       .access-text-box {
         margin-left: 8.3rem;
+
+        @include mpc {
+          margin-left: 5rem;
+        }
+
+        @media screen and (max-width: 950px) {
+          margin-left: 0;
+          margin-top: 3rem;
+        }
       }
 
       .access-opening {
@@ -77,6 +159,14 @@
 
         .access-opening-caution {
           line-height: 2;
+
+          @include mpc {
+            line-height: 1.4;
+          }
+
+          @media screen and (max-width: 950px) {
+            line-height: 2;
+          }
         }
       }
     }
@@ -85,10 +175,16 @@
       padding-top: 6.9rem;
 
       .access-map {
+        position: relative;
+        width: 100%;
+        padding-top: 75%;
 
         iframe {
-          display: block;
-          margin: 0 auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
         }
       }
     }
