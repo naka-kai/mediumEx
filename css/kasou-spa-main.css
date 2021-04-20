@@ -131,31 +131,31 @@ select::-ms-expand {
 @media screen and (max-width: 800px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper {
     max-width: 100rem;
-    height: 60rem;
+    height: 55rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper {
-    height: 55rem;
+    height: 53rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper {
-    height: 53rem;
+    height: 50rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper {
-    height: 50rem;
+    height: 48rem;
   }
 }
 
 @media screen and (max-width: 430px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper {
-    height: 48rem;
+    height: 45rem;
   }
 }
 
@@ -232,6 +232,13 @@ select::-ms-expand {
   .kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner {
     width: 75%;
     padding: 5rem 0 0 5rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner {
+    width: 90%;
+    padding: 5rem 0 0 2rem;
   }
 }
 
@@ -375,6 +382,13 @@ select::-ms-expand {
   }
 }
 
+@media screen and (max-width: 330px) {
+  .kasou-main .kasou-main-container .kasou-main-wrapper2 .kasou-main-text-box .kasou-main-text-box-inner {
+    width: 90%;
+    padding: 3rem 0 0 2rem;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper2 .kasou-main-text-box .kasou-main-text-box-inner .kasou-main-text-title {
     margin-bottom: 2rem;
@@ -395,6 +409,13 @@ select::-ms-expand {
   margin-bottom: 9.7rem;
 }
 
+@media screen and (max-width: 450px) {
+  .kasou-main .kasou-main-container .effect {
+    padding: 6rem 0 6rem;
+    margin-bottom: 9rem;
+  }
+}
+
 .kasou-main .kasou-main-container .effect .effect-wrapper h2 {
   font-size: 2.6rem;
   font-weight: 200;
@@ -403,10 +424,23 @@ select::-ms-expand {
   margin-bottom: 5rem;
 }
 
+@media screen and (max-width: 450px) {
+  .kasou-main .kasou-main-container .effect .effect-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
 .kasou-main .kasou-main-container .effect .effect-wrapper table {
   max-width: 88rem;
   border-collapse: collapse;
   margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .kasou-main .kasou-main-container .effect .effect-wrapper table {
+    width: 80vw;
+  }
 }
 
 .kasou-main .kasou-main-container .effect .effect-wrapper table tr {
@@ -418,12 +452,37 @@ select::-ms-expand {
   border-color: #E7E7E7;
 }
 
+@media screen and (max-width: 450px) {
+  .kasou-main .kasou-main-container .effect .effect-wrapper table tr {
+    font-size: 1.3rem;
+  }
+}
+
 .kasou-main .kasou-main-container .effect .effect-wrapper table tr .effect-title {
   width: 22rem;
   padding: 1.8rem 0;
 }
 
+@media (max-width: 1000px) {
+  .kasou-main .kasou-main-container .effect .effect-wrapper table tr .effect-title {
+    width: 20%;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .kasou-main .kasou-main-container .effect .effect-wrapper table tr .effect-title {
+    width: 25%;
+  }
+}
+
 .kasou-main .kasou-main-container .effect .effect-wrapper table tr .effect-text {
   padding: 1.8rem 0;
+}
+
+@media (max-width: 1000px) {
+  .kasou-main .kasou-main-container .effect .effect-wrapper table tr .effect-text br {
+    display: none;
+  }
 }
 /*# sourceMappingURL=kasou-spa-main.css.map */
