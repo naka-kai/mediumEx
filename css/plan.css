@@ -150,7 +150,8 @@ select::-ms-expand {
 
 @media screen and (max-width: 1100px) {
   .plan .plan-plans-box .plan-plan-box {
-    margin-bottom: 10rem;
+    margin: 0 auto 10rem;
+    max-width: 80%;
   }
   .plan .plan-plans-box .plan-plan-box:last-child {
     margin-bottom: 0;
