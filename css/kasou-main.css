@@ -206,7 +206,7 @@ select::-ms-expand {
 
 @media screen and (max-width: 1180px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner {
-    padding: 6rem 0 0 23rem;
+    padding: 6rem 0 0 27rem;
   }
 }
 
@@ -218,20 +218,20 @@ select::-ms-expand {
 
 @media screen and (max-width: 800px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner {
-    padding: 8rem 0 0 16rem;
+    padding: 11rem 0 0 16rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner {
-    padding: 8rem 0 0 10rem;
+    padding: 9rem 0 0 10rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner {
     width: 75%;
-    padding: 5rem 0 0 5rem;
+    padding: 8rem 0 0 5rem;
   }
 }
 

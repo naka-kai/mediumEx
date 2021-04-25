@@ -130,7 +130,7 @@
           padding: 6rem 8rem 13rem 24rem;
 
           @media screen and (max-width: 1180px) {
-            padding: 6rem 0 0 23rem;
+            padding: 6rem 0 0 27rem;
           }
 
           @media screen and (max-width: 1034px) {
@@ -138,16 +138,16 @@
           }
 
           @media screen and (max-width: 800px) {
-            padding: 8rem 0 0 16rem;
+            padding: 11rem 0 0 16rem;
           }
 
           @media screen and (max-width: 700px) {
-            padding: 8rem 0 0 10rem;
+            padding: 9rem 0 0 10rem;
           }
 
           @media screen and (max-width: 600px) {
             width: 75%;
-            padding: 5rem 0 0 5rem;
+            padding: 8rem 0 0 5rem;
           }
 
           @media screen and (max-width: 330px) {
@@ -200,6 +200,7 @@
           }
         }
       }
+
     }
 
     .kasou-main-wrapper2 {
@@ -272,5 +273,21 @@
         }
       }
     }
+
+    // .kasou-main-wrapper3 {
+    //   height: 60rem;
+
+    //   .kasou-main-text-box3 {
+    //     height: 45rem;
+
+    //     .kasou-main-text-box-inner {
+
+    //       @media screen and (max-width: 800px) {
+    //         padding: 10rem 0 0 16rem;
+    //       }
+    //     }
+    //   }
+    // }
+
   }
 }

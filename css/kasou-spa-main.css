@@ -160,9 +160,8 @@ select::-ms-expand {
 }
 
 .kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-img img {
-  width: 52.5rem;
-  height: 30rem;
-  width: 100%;
+  max-width: 52.5rem;
+  max-height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -231,7 +230,7 @@ select::-ms-expand {
 @media screen and (max-width: 600px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper .kasou-main-text-box .kasou-main-text-box-inner {
     width: 75%;
-    padding: 5rem 0 0 5rem;
+    padding: 6rem 0 0 5rem;
   }
 }
 
@@ -371,14 +370,7 @@ select::-ms-expand {
 @media screen and (max-width: 600px) {
   .kasou-main .kasou-main-container .kasou-main-wrapper2 .kasou-main-text-box .kasou-main-text-box-inner {
     width: 75%;
-    padding: 5rem 0 0 3rem;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .kasou-main .kasou-main-container .kasou-main-wrapper2 .kasou-main-text-box .kasou-main-text-box-inner {
-    width: 75%;
-    padding: 3rem 0 0 3rem;
+    padding: 6rem 0 0 3rem;
   }
 }
 

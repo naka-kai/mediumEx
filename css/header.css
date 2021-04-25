@@ -278,7 +278,7 @@ header .header-left .header-logo h1 a::before {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 40%;
+  width: 50rem;
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form {
@@ -301,12 +301,12 @@ header .header-left .header-logo h1 a::before {
   font-size: 1.7rem;
   text-align: center;
   border-bottom: 0.7px solid #e8e8e8;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
   margin-bottom: 1rem;
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form .name {
-  padding: 0.7rem 0;
+  padding: 2rem 0;
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form .name label {
@@ -325,7 +325,7 @@ header .header-left .header-logo h1 a::before {
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form .mail {
-  padding: 0.7rem 0;
+  padding: 2rem 0;
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form .mail label {
@@ -344,7 +344,7 @@ header .header-left .header-logo h1 a::before {
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form .form-select {
-  padding: 0.7rem 0;
+  padding: 2rem 0;
   display: block;
   position: relative;
   width: 100%;
@@ -392,7 +392,7 @@ header .header-left .header-logo h1 a::before {
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form .calendar {
-  padding: 0.7rem 0;
+  padding: 2rem 0;
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form .calendar .calendar-title {
@@ -411,7 +411,7 @@ header .header-left .header-logo h1 a::before {
 
 .header-pc-nav .modal .modal-bg .modal-contents form .submit {
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .header-pc-nav .modal .modal-bg .modal-contents form .submit input {
@@ -615,7 +615,7 @@ header .header-left .header-logo h1 a::before {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 70%;
+  width: 28rem;
 }
 
 .header-sp-right .modal-sp .modal-sp-bg .modal-sp-contents form {

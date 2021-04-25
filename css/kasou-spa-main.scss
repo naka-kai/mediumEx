@@ -93,9 +93,9 @@
 
       .kasou-main-img {
         img {
-          width: 52.5rem;
-          height: 30rem;
-          width: 100%;
+          max-width: 52.5rem;
+          max-height: 30rem;
+          // width: 100%;
           object-fit: cover;
 
           @media screen and (max-width: 1134px) {
@@ -126,7 +126,6 @@
         }
 
         .kasou-main-text-box-inner {
-          // margin: 6rem 1.8rem 0 24.4rem;
           width: 61.5%;
           padding: 6rem 8rem 13rem 24rem;
 
@@ -148,7 +147,7 @@
 
           @media screen and (max-width: 600px) {
             width: 75%;
-            padding: 5rem 0 0 5rem;
+            padding: 6rem 0 0 5rem;
           }
 
           @media screen and (max-width: 330px) {
@@ -251,12 +250,7 @@
 
           @media screen and (max-width: 600px) {
             width: 75%;
-            padding: 5rem 0 0 3rem;
-          }
-
-          @media screen and (max-width: 330px) {
-            width: 75%;
-            padding: 3rem 0 0 3rem;
+            padding: 6rem 0 0 3rem;
           }
 
           @media screen and (max-width: 330px) {
