@@ -72,9 +72,11 @@
     }
 
     .plan-plan-box {
+      max-width: 33.1rem;
 
       @media screen and (max-width: 1100px) {
-        margin-bottom: 10rem;
+        margin: 0 auto 10rem;
+        max-width: 80%;
 
         &:last-child {
           margin-bottom: 0;
@@ -127,12 +129,16 @@
           }
 
           .plan-smallNone {
+            display: block;
+
             @media screen and (max-width: 1100px) {
               display: none;
             }
           }
 
           .plan-smallDone {
+            display: none;
+
             @media screen and (max-width: 1100px) {
               display: block;
             }
@@ -154,12 +160,16 @@
 
 
           .plan-smallNone {
+            display: block;
+
             @media screen and (max-width: 1100px) {
               display: none;
             }
           }
 
           .plan-smallDone {
+            display: none;
+
             @media screen and (max-width: 1100px) {
               display: block;
             }
